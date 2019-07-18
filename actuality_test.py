@@ -123,7 +123,7 @@ for k, v in list(data.items()):
         except Exception as e:
             failed.setdefault(k, []).append({'step': 'item', 'pagination': links[k]['pagination'], 'path': links[k]['path']})
             print(failed_msg)
-            print('    ' + getting_item_msg)
+            print(settings['indent'] + getting_item_msg)
         else:
             print(ok_msg)
                 
@@ -133,9 +133,9 @@ for k, v in list(data.items()):
         """
         for _ in range(settings['retries_count']): # 20 retries
             try:
-                item = get(url_concat(links[k]['pagination'], new_item), proxies=prox).text if not new_item else new_item
+                item = get(url_concat(links[k]['pagination'], links[k]['item']).text, proxies=prox).text if not new_item else get(url_concat(links[k]['pagination'], new_item)).text
             except:
-                print(settings['indent'] + proxy_err.format(prox['https']) if prox else no_proxy_err)
+                print(settings['indent'] + (proxy_err.format(prox['https']) if prox else no_proxy_err))
                 prox = proxy()
                 continue
             else:
@@ -158,6 +158,7 @@ for k, v in list(data.items()):
             if item.find(e) == -1:
                 failed.setdefault(k, []).append({'step': 'expr', 'query': e, 'link': links[k]['item']})
                 print(failed_msg)
+                # quit()
                 break
         else:
             print(ok_msg)
