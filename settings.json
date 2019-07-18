@@ -1,0 +1,11 @@
+{
+    "regulars": {
+        "base": "https?:\\/\\/.+\\.(ru|com|su|biz|pro|info)"
+    },
+    "proxies": [
+        
+    ],
+    "format_templates": {
+        "citystar": "{}/scard.asp{}"
+    }
+}

@@ -1,0 +1,402 @@
+{
+  "rosrealt.ru": {
+    "pagination": "https://rosrealt.ru/ekaterinburg/kommercheskaja/prodam",
+    "item": "https://rosrealt.ru/ekaterinburg/kommercheskaja/344848",
+    "path": "//div[@class='info'][1]/a/@href"
+  },
+  "mohouse.ru": {
+    "pagination": "http://mohouse.ru/catalog/offices/prodazha/",
+    "item": "http://mohouse.ru/item/17944/",
+    "path": "//tr[@class='item']/td/a/@href"
+  },
+  "arendator.ru": {
+    "pagination": "https://www.arendator.ru/offers/spaces/office/?to_results",
+    "item": "https://www.arendator.ru/offers/751895/",
+    "path": "//div[contains(@class, 'objects-list__wrapper')]/a/@href"
+  },
+  "rosnedv.ru": {
+    "pagination": "https://www.rosnedv.ru/gsevastopol/kommercheskaya_nedvijimost/",
+    "item": "https://www.rosnedv.ru/gsevastopol/kommercheskaya_nedvijimost_21877383/",
+    "path": "//div[@class=\"catalog-box\"]/a/@href"
+  },
+  "raui.ru": {
+    "pagination": "https://raui.ru/search/result?object_type7=7&type=2&object=3&region=1&square_type=1",
+    "item": "https://raui.ru/realty/item/14852376-novaya-basmannaya-ulitsa",
+    "path": "//a[@class='searchrezults-item-info-body-text__more']/@href"
+  },
+  "ayax.ru": {
+    "pagination": "https://www.ayax.ru/kommercheskaya-nedvizhimost/",
+    "item": "https://www.ayax.ru/kommercheskaya-nedvizhimost/1007924444/",
+    "path": "//a[@class='elem_row_detail_url yaCounterPodrobnee']/@href"
+  },
+  "ryazanhouse.ru": {
+    "pagination": "http://ryazanhouse.ru/catalog/trade/prodazha/",
+    "item": "http://ryazanhouse.ru/item/16533/",
+    "path": "//div[@class=\"item-info\"]/h2/a/@href"
+  },
+  "ndv31.ru": {
+    "pagination": "http://ndv31.ru/belgorod/catalog?ObjectSearch%5BOperationType%5D=1&ObjectSearch%5BCategory%5D=4&ObjectSearch%5Bmin_Price%5D=&ObjectSearch%5Bmax_Price%5D=&ObjectSearch%5Bquick_search%5D=",
+    "item": "http://ndv31.ru/object/69823",
+    "path": "//div[@class=\"wrapper\"]/a/@href"
+  },
+  "tvoyadres.ru": {
+    "pagination": "https://tvoyadres.ru/nedvizhimost/?region=ANY&city=&deal=ANY&object=6&period=ANY&price_min=&price_max=&contractor=ANY&status=&type=11&uid=&user=&update=&category=&without=&dacha=&private=&favorite=&archive=&similar=&bedrooms=&synonym=&submit=",
+    "item": "https://tvoyadres.ru/moskovskaya-oblast/moskva/nedvizhimost/ofisy/sdacha/6363376/",
+    "path": "//div[@class=\"title\"]/a/@href"
+  },
+  "bizzona.ru": {
+    "pagination": "http://www.bizzona.ru/prodazha-kommercheskoy-nedvizhimosti.php",
+    "item": "http://www.bizzona.ru/detailsSell/164467",
+    "path": "//h3[@class=\"panel-title\"]/a/@href"
+  },
+  "gradstroy35.ru": {
+    "pagination": "https://gradstroy35.ru/kupit/kommercheskaya/",
+    "item": "https://gradstroy35.ru/kupit/kommercheskaya/48877",
+    "path": "//a[@itemprop=\"url\"]/@href"
+  },
+  "avito.ru": {
+    "pagination": "https://www.avito.ru/moskva/kommercheskaya_nedvizhimost?cd=1",
+    "item": "https://www.avito.ru/moskva/kommercheskaya_nedvizhimost/arenda_pomescheniya_proizvodstvo_sklad_285.3_m_1498069047",
+    "path": "//a[@class=\"item-description-title-link\"]/@href"
+  },
+  "upn.ru": {
+    "pagination": "https://upn.ru/realty_offices_sale.htm#panel_search",
+    "item": "https://upn.ru/realty_offices_sale_info/55562-2423.htm",
+    "path": "//tr[@class=\"robotno\"]/td[3]/a/@href"
+  },
+  "move.ru": {
+    "pagination": "https://move.ru/kommercheskaya_nedvijimost/",
+    "item": "https://move.ru/objects/moskva_ulica_barklaya_d_6s3_6825374143/",
+    "path": "//div[@class=\"search-item__header\"]/a/@href"
+  },
+  "realtymag.ru": {
+    "pagination": "https://www.realtymag.ru/office/prodazha/",
+    "item": "https://www.realtymag.ru/office/prodazha/26686165",
+    "path": "//div[@class='offer__headline']/a/@href"
+  },
+  "realty.dmir.ru": {
+    "pagination": "https://www.cian.ru/kupit-ofis/",
+    "item": "https://www.cian.ru/sale/commercial/210803318/",
+    "path": "//a[@class=\"c6e8ba5398--header-link--3XZlV\"]/@href"
+  },
+  "irk.ru": {
+    "pagination": "https://realty.irk.ru/comm/#date/all/price_type/RUR-ALL/",
+    "item": "https://realty.irk.ru/comm/54857/",
+    "path": "//a[@class=\"search-link\"]/@href"
+  },
+  "olymprealty.ru": {
+    "pagination": "http://olymprealty.ru/sale/kommercheskaya-nedvizhimost",
+    "item": "http://olymprealty.ru/sale/506466/nedvizhimost-1500000-m-000#.XS8fQegzaUk",
+    "path": "//a[@class=\"body\"]/@href"
+  },
+  "bazametrov.ru": {
+    "pagination": "https://bazametrov.ru/office",
+    "item": "https://bazametrov.ru/offers/148212678",
+    "path": "//div[@class=\"s-item-name\"]/a/@href"
+  },
+  "dom45.ru": {
+    "pagination": "https://dom45.ru/index.php?topic_id=180&optype=1&page=1&city_id=3&show_advanced_block=0&geoautocomplete%5Bdistrict_id%5D=&district_id=0&geoautocomplete%5Bstreet_id%5D=&street_id=0&number=&price_min=&price=",
+    "item": "https://dom45.ru/kommercheskaya/office/realty390104.html",
+    "path": "//div[@class=\"span3\"]/a/@href"
+  },
+  "gde.ru": {
+    "pagination": "https://moskva.gde.ru/nedvizhimost/kommercheskaya",
+    "item": "https://moskva.gde.ru/c/zdanie_ryadom_s_serebryanym_borom_42061670.html",
+    "path": "//div[@class=\"title\"]/a/@href"
+  },
+  "mirkvartir.ru": {
+    "pagination": "https://cre.mirkvartir.ru/%d0%9c%d0%be%d1%81%d0%ba%d0%b2%d0%b0/",
+    "item": "https://cre.mirkvartir.ru/218825940/",
+    "path": "//div[@class=\"top-content\"]/h4/a/@href"
+  },
+  "kalugahouse.ru": {
+    "pagination": "https://kalugahouse.ru/catalog/offices/prodazha/",
+    "item": "https://kalugahouse.ru/item/4171254/",
+    "path": "//div[@class=\"item-info\"]/h2/a/@href"
+  },
+  "multilisting.su": {
+    "pagination": "https://multilisting.su/?advertisement%5Bproperty_type%5D%5B%5D=0",
+    "item": "https://multilisting.su/g-yugorsk/for-rent-free-appointment/17062380-804-5-m-250000-rub-ul-mira",
+    "path": "//a[@class=\"header_adv_short\"]/@href"
+  },
+  "farpost.ru": {
+    "pagination": "https://www.farpost.ru/khabarovsk/realty/rent_business_realty/office/#map=open&center=15040242.09812105,6185859.739390847&zoom=11",
+    "item": "https://www.farpost.ru/khabarovsk/realty/rent_business_realty/office/ofis-ot-500-do-2000-kv-m-centr-goroda-otdelnoe-zdanie-parkovka-74229838.html",
+    "path": "//a[@class=\"bulletinLink auto-shy\"]/@href"
+  },
+  "sakh.com": {
+    "pagination": "https://sakhalin.biz/dir/198/394",
+    "item": "https://sakhalin.biz/zodchiy-hypermarket/dir/198/394/",
+    "path": "//span[@data-action=\"favoriteCompany\"]/following-sibling::a/@href"
+  },
+  "vladimirhouse.ru": {
+    "pagination": "http://vladimirhouse.ru/catalog/offices/prodazha/",
+    "item": "http://vladimirhouse.ru/item/424827/",
+    "path": "//div[@class=\"item-info\"]/h2/a/@href"
+  },
+  "bizsold.ru": {
+    "pagination": "http://bizsold.ru/rent/commercial-property",
+    "item": "http://bizsold.ru/rent/commercial-property/arenda-stomatologicheskogo-kabineta-m-kurskaya",
+    "path": "//div[@class=\"views-field-link-cart\"]/a/@href"
+  },
+  "biztorg.ru": {
+    "pagination": "http://biztorg.ru/offers/geo/n1",
+    "item": "http://biztorg.ru/view/33734301",
+    "path": "//div[@class=\"resultsGrid adv_search\"]/div/div/a/@href"
+  },
+  "citystar.ru": {
+    "pagination": "http://citystar.ru/detal.htm?d=40&nm=%CE%E1%FA%FF%E2%EB%E5%ED%E8%FF%20-%20%CF%F0%EE%E4%E0%EC%20%EA%EE%EC%EC%E5%F0%F7%E5%F1%EA%F3%FE%20%ED%E5%E4%E2%E8%E6%E8%EC%EE%F1%F2%FC%20%E2%20%E3.%20%CC%E0%E3%ED%E8%F2%EE%E3%EE%F0%F1%EA%E5",
+    "item": "http://citystar.ru/scard.asp?d=40&id=10091697",
+    "path": "//a[@class=\"adv-list-image__link\"]/@href"
+  },
+  "kvadrat64": {
+    "pagination": "https://kvadrat64.ru/givecombank-1000-1.html",
+    "item": "https://kvadrat64.ru/givecom-23227.html",
+    "path": "//a[@class=\"site3adv\"]/@href"
+  },
+  "theproperty.ru": {
+    "pagination": "https://theproperty.ru/moskva/lease/office/",
+    "item": "https://theproperty.ru/13188240/",
+    "path": "//p[@class=\"address\"]/a/@href"
+  },
+  "ners.ru": {
+    "pagination": "https://msk.ners.ru/kommercheskaya-prodazha/?utm_source=form",
+    "item": "https://msk.ners.ru/object/79347074.html",
+    "path": "//div[@class=\"media-body\"]/a/@href"
+  },
+  "domovoy45.ru": {
+    "pagination": "https://dom45.ru/index.php?topic_id=180&optype=1&page=1&city_id=3&show_advanced_block=0&geoautocomplete%5Bdistrict_id%5D=&district_id=0&geoautocomplete%5Bstreet_id%5D=&street_id=0&number=&price_min=&price=",
+    "item": "https://dom45.ru/kommercheskaya/office/realty390104.html",
+    "path": "//div[@class=\"grid_item \"]/div/div[@class='span3']/a/@href"
+  },
+  "realty.yandex.ru": {
+    "pagination": "https://realty.yandex.ru/moskva/kupit/kommercheskaya-nedvizhimost/",
+    "item": "https://realty.yandex.ru/offer/6200492320155053423/",
+    "path": "//div[@class=\"OffersSerpItem__generalInfo\"]/a/@href"
+  },
+  "aliant.pro": {
+    "pagination": "https://aliant.pro/catalog/?category=57&dealtype=0&region=0&city=0&citydistrict=0&objecttype=0&area=0&search=",
+    "item": "https://aliant.pro/catalog/commercial/g.-vologda,-ul.-batyushkova,-d.-7",
+    "path": "//div[@class=\"itemDesc\"]/a[2]/@href"
+  },
+  "nmls.ru": {
+    "pagination": "http://nn.nmls.ru/prodazha-kommercheskoy-nedvizhimosti",
+    "item": "http://nn.nmls.ru/prodazha-kommercheskoy-nedvizhimosti/nizhniy-novgorod/id5000118-51",
+    "path": "//div[@class=\"row realty-row\"]/div[2]/div/div[2]/a/@href"
+  },
+  "lg29.ru": {
+    "pagination": "https://lg29.ru/estates#/table/4/",
+    "item": "https://lg29.ru/estates/9314",
+    "path": "//a[@class=\"yellow-button\"]/@href"
+  },
+  "e1.ru": {
+    "pagination": "https://ekaterinburg.n1.ru/kupit/kommercheskaya/type-oficy/",
+    "item": "https://ekaterinburg.n1.ru/view/30384432/?open_card_kn",
+    "path": "//div[@class=\"card-title commercial-list-card__inner-block\"]/a/@href"
+  },
+  "realtyvision.ru": {
+    "pagination": "https://www.realtyvision.ru/kommercheskaya-nedvizhimost/?id_city=1&id_action=1&id_type=7&price_min=&price_max=&s_min=&s_max=&id_ns=0&dscr=",
+    "item": "https://www.realtyvision.ru/kommercheskaya-nedvizhimost/usobjects/236524/",
+    "path": "//table[@class=\"objects_table\"]//div/a[@title=\"????? ?????\"]/@href"
+  },
+  "youla.ru": {
+    "pagination": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost",
+    "item": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost/arienda-ofisnoie-pomieshchieniie-25-m2-5c8f5ba234e190a8f22b8772",
+    "path": "//li[@class=\"product_item\"]/a/@href"
+  },
+  "tulahouse.ru": {
+    "pagination": "http://tulahouse.ru/catalog/offices/prodazha/",
+    "item": "http://tulahouse.ru/item/294458/",
+    "path": "//div[@class=\"item-info\"]/h2/a/@href"
+  },
+  "domchel.ru": {
+    "pagination": "https://chelyabinsk.n1.ru/kupit/kommercheskaya/type-oficy/",
+    "item": "https://chelyabinsk.n1.ru/view/30206322/?open_card_kn",
+    "path": "//div[@class=\"card-title commercial-list-card__inner-block\"]/a/@href"
+  },
+  "delomart.ru": {
+    "pagination": "http://delomart.ru/",
+    "item": "http://delomart.ru/properties/%d0%b3%d0%be%d1%82%d0%be%d0%b2%d1%8b%d0%b9-%d0%b0%d1%80%d0%b5%d0%bd%d0%b4%d0%bd%d1%8b%d0%b9-%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81-%d0%b2-%d1%81%d0%be%d0%b1%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be/",
+    "path": "//h3[@class=\"property-box-title\"]/a/@href"
+  },
+  "irr.ru": {
+    "pagination": "https://irr.ru/real-estate/commercial-sale/offices/",
+    "item": "https://irr.ru/real-estate/commercial-sale/offices/ofis-94-kv-m-ofisnoe-zdanie-varshavskoe-sh-56-2-advert700243865.html",
+    "path": "//div[@class=\"listing__itemTitleWrapper\"]/a/@href"
+  },
+  "brsn.ru": {
+    "pagination": "http://www.brsn.ru/comercheskay/offices.html",
+    "item": "http://www.brsn.ru/com/5000130/4.html",
+    "path": "//td[@class=\"text-left text-middle\"]/a/@href"
+  },
+  "market.sakh.com": {
+    "pagination": "https://market.sakh.com/business/sale_business/?view=list",
+    "item": "https://market.sakh.com/2602277.html",
+    "path": "//div[@class=\"card \"]/a/@href"
+  },
+  "advecs.com": {
+    "pagination": "https://www.advecs.com/catalog/commercial/",
+    "item": "https://www.advecs.com/catalog/commercial/771301/?pricea=1",
+    "path": "//td[@class=\"second3\"]/a/@href"
+  },
+  "zdanie.info": {
+    "pagination": "https://zdanie.info/search/?filter%5Btype%5D=rent&filter%5Btype_rent%5D%5B%5D=123&filter%5Btype_sale%5D%5B%5D=all&filter%5Bsquare1%5D=&filter%5Bsquare2%5D=&filter%5Bcurrency%5D=1&filter%5Bprice1%5D=&filter%5Bprice_type%5D=square_year&filter%5Bprice2%5Drice2=&filter%5Bregion%5D%5B%5D=1",
+    "item": "https://zdanie.info/%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0/%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0_%D0%BE%D1%84%D0%B8%D1%81%D0%BE%D0%B2/3436/object/11979",
+    "path": "//a[@class=\"btn btn-two fz12\"]/@href"
+  },
+  "business-asset.ru": {
+    "pagination": "https://business-asset.com/ru/prodazha-nedvizimosti/ofisnaya/",
+    "item": "https://business-asset.com/ru/sverdlovskaya-oblast/kamensk-uralskij/prodazha-nedvizimosti/run096652/",
+    "path": "//div[@class=\"desciption\"]/h2/a/@href"
+  },
+  "rk-region.ru": {
+    "pagination": "https://rk-region.ru/catalog/filter/tip_nedv-kommercheskaya/",
+    "item": "https://rk-region.ru/catalog/arenda/kommercheskaya-nedvizhimost/Pomeshcheniya-svobodnogo-naznacheniya/ul_samoylo_d10_k1-7736659.html",
+    "path": "//h3[@class=\"attribute-title\"]/a/@href"
+  },
+  "granta24.ru": {
+    "pagination": "https://www.granta24.ru/commercial/rent.html#!square=0-8000&price=0-1500000000&view-mode=view-list",
+    "item": "https://www.granta24.ru/commercial/rent/1633.html",
+    "path": "//a[@class=\"search-content__row mh-view-list\"]/@href"
+  },
+  "ndv.ru": {
+    "pagination": "https://www.ndv.ru/commercial/sale",
+    "item": "https://www.ndv.ru/commercial/sale/1204/other",
+    "path": "//a[@class=\"tile__link\"]/@href"
+  },
+  "doska.ru": {
+    "pagination": "https://www.doska.ru/real-estate/ofisi/",
+    "item": "https://www.doska.ru/msg/real-estate/ofisi/altajskij-kraj/barnaul/illln.html",
+    "path": "//a[@class=\"am\"]/@href"
+  },
+  "dom.vse42.ru": {
+    "pagination": "http://dom.vse42.ru/property/commercial/",
+    "item": "http://dom.vse42.ru/property/30581990/?viewtype=property&category=commercial&sort=datedesc",
+    "path": "//a[@class=\"obj-adv-url\"]/@href"
+  },
+  "sibdom.ru": {
+    "pagination": "https://www.sibdom.ru/commercial/prodam/",
+    "item": "https://www.sibdom.ru/stickers/view/3218782/",
+    "path": "//a[contains(@class, \"catalog-product\")]/@href"
+  },
+  "bn.ru": {
+    "pagination": "https://www.bn.ru/kommercheskaya/?UTM_source=main_page_search&type_name=1&type_select_buy=10&type_select_arenda=1&areaFrom=&areaTo=&to=&typeKN%5B%5D=0",
+    "item": "https://www.bn.ru/detail/kommercheskaya/3346350/",
+    "path": "//a[@data-event=\"event19\"]/@href"
+  },
+  "mlsn.ru": {
+    "pagination": "https://kaluga.mlsn.ru/pokupka-kommercheskaja-nedvizhimost/",
+    "item": "https://kaluga.mlsn.ru/pokupka-kommercheskaja-nedvizhimost/ofisnoe-pomeshhenie-ul-pobedy-9a-id196992/",
+    "path": "//a[@class=\"location\"]/@href"
+  },
+  "roszem.ru": {
+    "pagination": "http://www.roszem.ru/search/?utf8=%E2%9C%93&grid=&type=&sort=&type=Land&square_from=%D0%BE%D1%82&square_to=%D0%B4%D0%BE&area_unit=ga&price_from=%D0%BE%D1%82&price_to=%D0%B4%D0%BE&currency=RUB&region=&ground=",
+    "item": "http://www.roszem.ru/land/671817/",
+    "path": "//a[contains(@class, \"location\")]/@href"
+  },
+  "n1.ru": {
+    "pagination": "https://moskva.n1.ru/kupit/kommercheskaya/",
+    "item": "https://moskva.n1.ru/view/31135629/?open_card_kn",
+    "path": "//a[@class=\"link\"]/@href"
+  },
+  "cian.ru": {
+    "pagination": "https://www.cian.ru/kupit-ofis/",
+    "item": "https://www.cian.ru/sale/commercial/210803318/",
+    "path": "//a[@class=\"c6e8ba5398--header-link--3XZlV\"]/@href"
+  },
+  "vrx.ru": {
+    "pagination": "https://www.vrx.ru/data/prodazha/commercial/",
+    "item": "https://www.vrx.ru/data/648582_36063.html",
+    "path": "//h3[@itemprop=\"name\"]/a/@href"
+  },
+  "tomsk.ru09.ru": {
+    "pagination": "https://www.tomsk.ru09.ru/realty/?type=1&otype=3",
+    "item": "https://www.tomsk.ru09.ru/realty?subaction=detail&id=4152706",
+    "path": "//a[@onclick=\"go_url(this, event);\"]/@href"
+  },
+  "alterainvest.ru": {
+    "pagination": "https://alterainvest.ru/commercial/",
+    "item": "https://alterainvest.ru/commercial/real-estate-2531693/",
+    "path": "//a[@class=\"item\"]/@href"
+  },
+  "qp.ru": {
+    "pagination": "https://moskva.qp.ru/realty/prodau_kommercheskaja",
+    "item": "https://moskva.qp.ru/realty/kommercheskaja/prodau_blank_44275461",
+    "path": "//a[contains(@class, \"row\")]/@href"
+  },
+  "agent42.ru": {
+    "pagination": "http://agent42.ru/index.php?option=com_adsmanager&page=show_category&catid=23&order=0&expand=0&Itemid=546",
+    "item": "http://agent42.ru/index.php?option=com_adsmanager&page=show_ad&adid=5245&catid=29&Itemid=546",
+    "path": "//h2/a/@href"
+  },
+  "n30.ru": {
+    "pagination": "https://n30.ru/sellcombank-1000-1.html",
+    "item": "https://n30.ru/sellcom-2111.html",
+    "path": "//a[@class=\"site3\"]/@href"
+  },
+  "nedvizhka.ru": {
+    "pagination": "https://www.nedvizhka.ru/prodazha/prodaja?street_name=&square_min=&square_max=&city_id=0&price_min=0&price=",
+    "item": "https://www.nedvizhka.ru/volgograd/prodazha/prodaja/sklad/realty17046012",
+    "path": "//div[@class=\"row\"]//h3[@class='header-h3']/parent::a/@href"
+  },
+  "beboss.ru": {
+    "pagination": "https://www.beboss.ru/kn/msk_office_rent?price_type=m&price_period=m&price_min=&price_max=&area_min=&area_max=",
+    "item": "https://mkm.beboss.ru/",
+    "path": "//a[@class=\"button green paint big full\"]/@href"
+  },
+  "bcinform.ru": {
+    "pagination": "https://bcinform.ru/spb/biznes-centry/",
+    "item": "https://bcinform.ru/spb/fabrika-bebelya.html",
+    "path": "//a[@itemprop=\"url\"]/@href"
+  },
+  "dom43.ru": {
+    "pagination": "https://dom43.ru/realty/search/?realtor=&operation=sell&object_type=commercial&yandex_address=&price__gte=&price__lte=&id=&area_total__gte=&area_total__lte=",
+    "item": "https://dom43.ru/realty/pomeschenie-svobodnogo-naznacheniya-na-prodazhu-242298/",
+    "path": "//div[@class=\"property-card__price\"]/a/@href"
+  },
+  "gdeetotdom.ru": {
+    "pagination": "https://www.gdeetotdom.ru/kupit-ofis-moskva/",
+    "item": "https://www.gdeetotdom.ru/obj/commercial/msk/32875757486/",
+    "path": "//div[@class=\"b-objects-list__address-link\"]/a/@href"
+  },
+  "base.zem.ru": {
+    "pagination": "http://base.zem.ru/?cat=7&area_from=&area_to=50&area_house_from=0&area_house_to=5000&price_from=50+000&price_to=150+000+000&price_type=RUB&obj_oblast=0",
+    "item": "http://base.zem.ru/lot/1035627/",
+    "path": "//a[@class=\"b-special-lots__item__information__link-title-text\"]/@href"
+  },
+  "kn.ngs.ru": {
+    "pagination": "https://novosibirsk.n1.ru/kupit/kommercheskaya/?utm_source=realty&utm_campaign=realty_integration&utm_term=redirected_from_realty",
+    "item": "https://novosibirsk.n1.ru/view/30678273/?open_card_kn",
+    "path": "//a[@class=\"link\"]/@href"
+  },
+  "ya39.ru": {
+    "pagination": "https://ya39.ru/realty/commercial/",
+    "item": "https://ya39.ru/realty/commercial/prodat/baza_5000_kv_m_kaliningrad_moskovskiy_zaporozhskaya_5a_s485547",
+    "path": "//a[@class=\"preTit\"]/@href"
+  },
+  "ankvartal31.ru": {
+    "pagination": "http://ankvartal31.ru/latest-listings?field_mt_contract_tid=All&field_mt_kind_tid=8&field_mt_property_one_value_1=All&field_rg_tid=All&field_mt_price_value=All&field_mt_property_one_value=",
+    "item": "http://ankvartal31.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/%D1%85%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B3%D0%BE%D1%80%D0%B0/%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B3%D0%BE-%D0%BD%D0%B5%D0%B6%D0%B8%D0%BB%D0%BE%D0%B3%D0%BE-%D0%BF%D0%BE%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F-1300-%D0%BA%D0%B2%D0%BC",
+    "path": "//a[@class=\"link\"]/@href"
+  },
+  "life-realty.ru": {
+    "pagination": "http://novgorod.life-realty.ru/commerce-rent/oficy/",
+    "item": "http://novgorod.life-realty.ru/commerce-rent/commerce_3477/",
+    "path": "//td[@class=\"txt\"]/a/@href"
+  },
+  "vestum.ru": {
+    "pagination": "https://www.vestum.ru/%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8/",
+    "item": "https://www.vestum.ru/%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8/%D0%BA%D0%B0%D1%84%D0%B5-%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD-%D1%80%D0%B8%D0%B2%D1%8C%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80-848860/",
+    "path": "//a[@class=\"card-inf \"]/@href"
+  },
+  "businessesforsale.ru": {
+    "pagination": "https://businessesforsale.ru/search/default.aspx?industry=122&location=XX&pricefrom=&priceto=",
+    "item": "https://businessesforsale.ru/Kurskaya-oblast/kupit-biznes/prodazha-neftebazi-v-kurskoj-oblasti-for-sale/",
+    "path": "//a[contains(@class, \"listingResult\")]/@href"
+  },
+  "bbport.ru": {
+    "pagination": "https://russia.bbport.ru/commercial/arenda/?obj=realty&city=-1&sp=1&oper_type=118",
+    "item": "https://bbport.ru/commercial/arenda/torgovaja-ploshhadi/bank-restoran-kafe-salon-krasoty-bytovye-uslugi-cvety-medicinskij-centr-ofis-apteka-produkty-magazin-kosmetika-atele-odezhdy-parikmaherskaja-detskij-magazin-odezhda-drugoe_9271/",
+    "path": "//a[@class=\"object__title\"]/@href"
+  }
+}
