@@ -7,7 +7,6 @@ import traceback
 
 from strings import *
 
-
 serv_iter = None
 serv = None
 prox = None
@@ -18,6 +17,14 @@ with open('settings.json', encoding='utf-8') as f:
 
 
 def url_concat(pagination, item_xpathed):
+    """
+    Concatenating base and card links
+    :param pagination: url to pagination
+    :param item_xpathed: full/not full url to card
+    :type pagination: string
+    :type item_xpathed: string
+    :return: full url to card
+    """
     base = match(settings['regulars']['base'], pagination).group(0)
     for k, v in settings['format_templates'].items():
         if k in base:
@@ -44,6 +51,11 @@ def get_proxy():
 
 
 def proxy():
+    """
+    generate next proxy from list (free or personal)
+    :return type: dict
+    :return: {"https": "ip:host"}
+    """
     global serv_iter
     global serv
     if not serv_iter:
@@ -76,7 +88,7 @@ for k, v in list(data.items()):
 
         print(testing_msg.format(k))
 
-        for _ in range(20): # 20 retries
+        for _ in range(settings['retries_count']): # 20 retries
             try:
                 pagination = get(links[k]['pagination'], proxies=prox).text
             except:
@@ -90,7 +102,7 @@ for k, v in list(data.items()):
         """
         Test for pagination expr and exprn
         """
-        print('    ' + testing_pagination_msg, end='...')
+        print(settings['indent'] + testing_pagination_msg, end='...')
 
         for e in list(v['expr']) + list(v['exprn']):
             if pagination.find(e) != -1:
@@ -104,7 +116,7 @@ for k, v in list(data.items()):
         """
         Trying to get new item from pagination using xpath from instruction
         """
-        print('    Getting new item', end='.....')
+        print(settings['indent'] + itemgetting_msg, end='.....')
         try:
             new_item = choice(html.fromstring(pagination).xpath(links[k]['path']))
             links[k]['item'] = url_concat(links[k]['pagination'], new_item)
@@ -119,11 +131,11 @@ for k, v in list(data.items()):
         """
         Trying to get an item from json if there is no item in instruction
         """
-        for _ in range(20): # 20 retries
+        for _ in range(settings['retries_count']): # 20 retries
             try:
                 item = get(url_concat(links[k]['pagination'], new_item), proxies=prox).text if not new_item else new_item
             except:
-                print('    ' + proxy_err.format(prox['https']) if prox else no_proxy_err)
+                print(settings['indent'] + proxy_err.format(prox['https']) if prox else no_proxy_err)
                 prox = proxy()
                 continue
             else:
@@ -133,9 +145,9 @@ for k, v in list(data.items()):
         """
         If we found item neither in pagination nor in instruction
         """
-        print('    ' + testing_item_expr_msg, end='...')
+        print(settings['indent'] + testing_item_expr_msg, end='...')
         if not item:
-            print('    ' + no_item_err + '...')
+            print(settings['indent'] + no_item_err + '...')
             continue
 
 
@@ -150,7 +162,7 @@ for k, v in list(data.items()):
         else:
             print(ok_msg)
 
-        print('    ' + testing_item_exprn_msg, end='...')
+        print(settings['indent'] + testing_item_exprn_msg, end='...')
         for e in v['exprn']:
             if item.find(e) != -1:
                 failed.setdefault(k, []).append({'step': 'exprn', 'query': e, 'link': links[k]['item']})
@@ -165,7 +177,7 @@ for k, v in list(data.items()):
     # TODO: make an error-recognizer
     except Exception as e:
         print(exception_caught_msg.format(str(e)))
-        failed.setdefault(k, []).append({'Exception': str(e), 'content': v, 'Traceback': traceback.format_exc()})
+        failed.setdefault(k, []).append({'Exception': str(e), 'content': v, 'Traceback': str(traceback.format_exc())})
 
 
 

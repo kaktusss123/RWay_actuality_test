@@ -6,6 +6,8 @@
         
     ],
     "format_templates": {
-        "citystar": "{}/scard.asp{}"
-    }
+        
+    },
+    "retries_count": 20,
+    "indent": "    "
 }

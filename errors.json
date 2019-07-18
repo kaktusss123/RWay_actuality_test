@@ -3,28 +3,28 @@
     {
       "step": "expr",
       "query": "Отправить сообщение автору объявления",
-      "link": "https://rosrealt.ru/ekaterinburg/kommercheskaja/491841"
+      "link": "https://rosrealt.ru/ekaterinburg/kommercheskaja/501827"
     }
   ],
   "mohouse.ru": [
     {
       "step": "expr",
       "query": "Кол-во просмотров",
-      "link": "http://mohouse.ru/item/15009/"
+      "link": "http://mohouse.ru/item/10137/"
     }
   ],
   "arendator.ru": [
     {
       "step": "expr",
       "query": "Показать телефон",
-      "link": "https://www.arendator.ru/offers/821724//"
+      "link": "https://www.arendator.ru/offers/798724//"
     }
   ],
   "rosnedv.ru": [
     {
       "step": "expr",
       "query": "Связаться с продавцом",
-      "link": "https://www.rosnedv.ru/gsevastopol/kommercheskaya_nedvijimost_25103957/"
+      "link": "https://www.rosnedv.ru/gsevastopol/kommercheskaya_nedvijimost_24974229/"
     }
   ],
   "raui.ru": [
@@ -43,21 +43,21 @@
     {
       "step": "expr",
       "query": "object__price",
-      "link": "https://www.ayax.ru/kommercheskaya-nedvizhimost/1008294033/"
+      "link": "https://www.ayax.ru/kommercheskaya-nedvizhimost/1008292974/"
     }
   ],
   "ryazanhouse.ru": [
     {
       "step": "expr",
       "query": "nov-tgb-layout l-25",
-      "link": "http://ryazanhouse.ru/item/12420/"
+      "link": "http://ryazanhouse.ru/item/2412/"
     }
   ],
   "ndv31.ru": [
     {
       "step": "expr",
       "query": "object--left",
-      "link": "http://ndv31.ru/object/63733"
+      "link": "http://ndv31.ru/object/69473"
     }
   ],
   "tvoyadres.ru": [
@@ -69,7 +69,7 @@
     {
       "step": "expr",
       "query": "fa fa_heart_o",
-      "link": "https://tvoyadres.ru/kemerovskaya-oblast/novokuznetsk/nedvizhimost/ofisy/sdacha/6363575/"
+      "link": "https://tvoyadres.ru/respublika-tatarstan/kazan/nedvizhimost/ofisy/pokupka/6367313/"
     }
   ],
   "bizzona.ru": [
@@ -83,7 +83,7 @@
     {
       "step": "expr",
       "query": "offer-main",
-      "link": "https://gradstroy35.ru/kupit/kommercheskaya/46444"
+      "link": "https://gradstroy35.ru/kupit/kommercheskaya/46493"
     }
   ],
   "avito.ru": [
@@ -95,14 +95,14 @@
     {
       "step": "expr",
       "query": "title-info-title-text",
-      "link": "https://www.avito.ru/moskva/kommercheskaya_nedvizhimost/ofisnoe_pomeschenie_20_m_1631683046"
+      "link": "https://www.avito.ru/moskva/kommercheskaya_nedvizhimost/ofisnoe_pomeschenie_44.7_kv.m_ot_sobstvennika_1774438093"
     }
   ],
   "upn.ru": [
     {
       "step": "expr",
       "query": "ctl00_VOI_pnInfo",
-      "link": "https://upn.ru/realty_offices_sale_info/20000255-2972.htm"
+      "link": "https://upn.ru/realty_offices_sale_info/30146304-123.htm"
     }
   ],
   "move.ru": [
@@ -114,7 +114,7 @@
     {
       "step": "expr",
       "query": "Пожаловаться",
-      "link": "https://move.ru//move.ru/objects/moskva_ulica_barklaya_d_6s3_6825041410/"
+      "link": "https://move.ru//move.ru/objects/moskva_luchnikov_pereulok_d_74_st_1_d_74_st_1_6815552989/"
     }
   ],
   "realtymag.ru": [
@@ -133,7 +133,7 @@
     {
       "step": "expr",
       "query": "price_offer",
-      "link": "https://www.cian.ru/sale/commercial/204700063/"
+      "link": "https://www.cian.ru/sale/commercial/212726536/"
     }
   ],
   "irk.ru": [
@@ -157,7 +157,7 @@
     {
       "step": "expr",
       "query": "Подробная информация",
-      "link": "http://olymprealty.ru/sale/463466/nedvizhimost-1185-m-629"
+      "link": "http://olymprealty.ru/sale/463711/nedvizhimost-400-m-946"
     }
   ],
   "bazametrov.ru": [
@@ -171,28 +171,28 @@
     {
       "step": "expr",
       "query": "span12 price",
-      "link": "https://dom45.ru/kommercheskaya/free/realty374543.html"
+      "link": "https://dom45.ru/kommercheskaya/proizvodstvo/realty378535.html"
     }
   ],
   "gde.ru": [
     {
       "step": "expr",
       "query": "show-tel",
-      "link": "https://moskva.gde.ru/c/prodam_kommercheskaya_41970925.html"
+      "link": "https://moskva.gde.ru/c/auditoriya_s_pochasovoy_oplatoy_slovo_39600785.html"
     }
   ],
   "mirkvartir.ru": [
     {
       "step": "expr",
       "query": "Связаться с продавцом:",
-      "link": "https://cre.mirkvartir.ru/226914457/"
+      "link": "https://cre.mirkvartir.ru/226914452/"
     }
   ],
   "kalugahouse.ru": [
     {
       "step": "expr",
       "query": "nov-tgb-layout l-25",
-      "link": "https://kalugahouse.ru/item/4163303/"
+      "link": "https://kalugahouse.ru/item/4111098/"
     }
   ],
   "multilisting.su": [
@@ -204,56 +204,61 @@
     {
       "step": "expr",
       "query": "btn btn-success ShowAdvPhone",
-      "link": "https://multilisting.su/r-n-budennovskiy/g-budennovsk/sale-free-appointment/16496533-30253-0-m-21500210-rub-gorodskoe-poselenie-budyonnovsk"
+      "link": "https://multilisting.su/g-moskva/for-rent-trade/19846062-80-0-m-180000-rub-ul-dubninskaya"
     }
   ],
   "farpost.ru": [
     {
       "step": "expr",
       "query": "note-form async",
-      "link": "https://www.farpost.ru/khabarovsk/realty/rent_business_realty/office/sdajutsja-ofisnye-i-skladskie-pomeshenija-v-habarovske-50727201.html"
+      "link": "https://www.farpost.ru/khabarovsk/realty/rent_business_realty/office/sdam-oborudovannoe-rabochee-mesto-v-ofise-40-kv-m-v-centre-goroda-71855281.html"
     }
   ],
   "sakh.com": [
     {
+      "step": "item",
+      "pagination": "https://sakhalin.biz/dir/198/394",
+      "path": "//span[@data-action=\"favoriteCompany\"]/following-sibling::a/@href"
+    },
+    {
       "step": "expr",
       "query": "Показать контакты",
-      "link": "https://sakhalin.biz/vilmag-co/dir/198/394/"
+      "link": "https://sakhalin.biz/zodchiy-hypermarket/dir/198/394/"
     }
   ],
   "vladimirhouse.ru": [
     {
       "step": "expr",
       "query": "nov-tgb-layout l-25",
-      "link": "http://vladimirhouse.ru/item/425557/"
+      "link": "http://vladimirhouse.ru/item/423886/"
     }
   ],
   "biztorg.ru": [
     {
       "step": "expr",
       "query": "block2 contacts",
-      "link": "http://biztorg.ru/view/36318066"
+      "link": "http://biztorg.ru/view/36365525"
     }
   ],
   "citystar.ru": [
     {
       "step": "expr",
       "query": "avl-middle",
-      "link": "http://citystar.ru/scard.aspscard.asp?d=40&id=9727762"
+      "link": "http://citystar.ru/scard.aspscard.asp?d=40&id=10044215"
     }
   ],
   "theproperty.ru": [
     {
       "step": "expr",
       "query": "object-tabs",
-      "link": "https://theproperty.ru/13188527/"
+      "link": "https://theproperty.ru/13188680/"
     }
   ],
   "ners.ru": [
     {
       "step": "expr",
       "query": "card-block notes_view",
-      "link": "https://msk.ners.ru/object/79737502.html"
+      "link": "https://msk.ners.ru/object/79737608.html"
     }
   ],
   "domovoy45.ru": [
@@ -270,9 +275,14 @@
   ],
   "realty.yandex.ru": [
     {
+      "step": "item",
+      "pagination": "https://realty.yandex.ru/moskva/kupit/kommercheskaya-nedvizhimost/",
+      "path": "//div[@class=\"OffersSerpItem__generalInfo\"]/a/@href"
+    },
+    {
       "step": "expr",
       "query": "Показать телефон",
-      "link": "https://realty.yandex.ru/offer/3985417349005242299/"
+      "link": "https://realty.yandex.ru/offer/6200492320155053423/"
     }
   ],
   "aliant.pro": [
@@ -291,7 +301,7 @@
     {
       "step": "expr",
       "query": "card-center-col",
-      "link": "http://nn.nmls.ru#comment-modal"
+      "link": "http://nn.nmls.ru/prodazha-kommercheskoy-nedvizhimosti/arzamas/id1002090-10"
     }
   ],
   "lg29.ru": [
@@ -315,7 +325,7 @@
     {
       "step": "expr",
       "query": "Показать телефон",
-      "link": "https://ekaterinburg.n1.ru/view/27354950/?open_card_kn"
+      "link": "https://ekaterinburg.n1.ru/view/30050111/?open_card_kn"
     }
   ],
   "realtyvision.ru": [
@@ -334,21 +344,21 @@
     {
       "step": "expr",
       "query": "Добавить в избранное",
-      "link": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost/arienda-ofisnoie-pomieshchieniie-375-m2-5d2f9548a80e2f436d238541"
+      "link": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost/arienda-pomieshchieniie-svobodnogho-naznachieniia-40-m2-5d2fad31cf2045300074ac22"
     }
   ],
   "tulahouse.ru": [
     {
       "step": "expr",
       "query": "nov-tgb-layout l-25",
-      "link": "http://tulahouse.ru/item/245813/"
+      "link": "http://tulahouse.ru/item/245796/"
     }
   ],
   "domchel.ru": [
     {
       "step": "expr",
       "query": "detail_realty",
-      "link": "https://chelyabinsk.n1.ru/view/29670297/?open_card_kn"
+      "link": "https://chelyabinsk.n1.ru/view/23892848/?open_card_kn"
     }
   ],
   "delomart.ru": [
@@ -372,59 +382,74 @@
     {
       "step": "expr",
       "query": "Показать телефон",
-      "link": "https://irr.ru/real-estate/commercial-sale/offices/prodazha-ofisa-197-5-m2-advert713636934.html"
+      "link": "https://irr.ru/real-estate/commercial-sale/offices/ofis-160-kv-m-osobnyak-otdel-nyy-vhod-1-ya-liniya-advert710236699.html"
     }
   ],
   "brsn.ru": [
     {
       "step": "expr",
       "query": "TopShowObject",
-      "link": "http://www.brsn.ru/com/32264/8.html"
+      "link": "http://www.brsn.ru/com/5000130/4.html"
     }
   ],
   "market.sakh.com": [
     {
+      "step": "item",
+      "pagination": "https://market.sakh.com/business/sale_business/?view=list",
+      "path": "//div[@class=\"card \"]/a/@href"
+    },
+    {
       "step": "expr",
       "query": "div class=\"seller\"",
-      "link": "https://market.sakh.com/2903554.html"
+      "link": "https://market.sakh.com/2602277.html"
     }
   ],
   "advecs.com": [
     {
-      "Exception": "'NoneType' object is not subscriptable",
-      "content": {
-        "expr": [
-          "Связаться с агент"
-        ],
-        "exprn": "<div class=\"empty\"></div>"
-      },
-      "Traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 603, in urlopen\n    chunked=chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 344, in _make_request\n    self._validate_conn(conn)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 843, in _validate_conn\n    conn.connect()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connection.py\", line 370, in connect\n    ssl_context=context)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\ssl_.py\", line 355, in ssl_wrap_socket\n    return context.wrap_socket(sock, server_hostname=server_hostname)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 423, in wrap_socket\n    session=session\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 870, in _create\n    self.do_handshake()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 1139, in do_handshake\n    self._sslobj.do_handshake()\nssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 449, in send\n    timeout=timeout\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 641, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\retry.py\", line 399, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.advecs.com', port=443): Max retries exceeded with url: /catalog/commercial/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)')))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\Actuality\\actuality_test.py\", line 80, in <module>\n    pagination = get(links[k]['pagination'], proxies=prox).text\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 514, in send\n    raise SSLError(e, request=request)\nrequests.exceptions.SSLError: HTTPSConnectionPool(host='www.advecs.com', port=443): Max retries exceeded with url: /catalog/commercial/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)')))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\Actuality\\actuality_test.py\", line 82, in <module>\n    print('    ' + proxy_err.format(prox[\"https\"]))\nTypeError: 'NoneType' object is not subscriptable\n"
+      "step": "pagination",
+      "query": "<",
+      "link": "https://www.advecs.com/catalog/commercial/"
+    },
+    {
+      "step": "item",
+      "pagination": "https://www.advecs.com/catalog/commercial/",
+      "path": "//td[@class=\"second3\"]/a/@href"
+    },
+    {
+      "step": "expr",
+      "query": "Связаться с агент",
+      "link": "https://www.advecs.com/catalog/commercial/771301/?pricea=1"
+    },
+    {
+      "step": "exprn",
+      "query": "c",
+      "link": "https://www.advecs.com/catalog/commercial/771301/?pricea=1"
     }
   ],
   "zdanie.info": [
     {
-      "Exception": "'NoneType' object is not subscriptable",
+      "Exception": "'schema'",
       "content": {
         "expr": [
           "Контакты по объекту"
         ],
         "exprn": ""
       },
-      "Traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 603, in urlopen\n    chunked=chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 387, in _make_request\n    six.raise_from(e, None)\n  File \"<string>\", line 2, in raise_from\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 383, in _make_request\n    httplib_response = conn.getresponse()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 1336, in getresponse\n    response.begin()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 306, in begin\n    version, status, reason = self._read_status()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 267, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\socket.py\", line 589, in readinto\n    return self._sock.recv_into(b)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 1071, in recv_into\n    return self.read(nbytes, buffer)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 929, in read\n    return self._sslobj.read(len, buffer)\nConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 449, in send\n    timeout=timeout\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 641, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\retry.py\", line 368, in increment\n    raise six.reraise(type(error), error, _stacktrace)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\packages\\six.py\", line 685, in reraise\n    raise value.with_traceback(tb)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 603, in urlopen\n    chunked=chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 387, in _make_request\n    six.raise_from(e, None)\n  File \"<string>\", line 2, in raise_from\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 383, in _make_request\n    httplib_response = conn.getresponse()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 1336, in getresponse\n    response.begin()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 306, in begin\n    version, status, reason = self._read_status()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 267, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\socket.py\", line 589, in readinto\n    return self._sock.recv_into(b)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 1071, in recv_into\n    return self.read(nbytes, buffer)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 929, in read\n    return self._sslobj.read(len, buffer)\nurllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\Actuality\\actuality_test.py\", line 80, in <module>\n    pagination = get(links[k]['pagination'], proxies=prox).text\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 498, in send\n    raise ConnectionError(err, request=request)\nrequests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\Actuality\\actuality_test.py\", line 82, in <module>\n    print('    ' + proxy_err.format(prox[\"https\"]))\nTypeError: 'NoneType' object is not subscriptable\n"
+      "Traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 603, in urlopen\n    chunked=chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 387, in _make_request\n    six.raise_from(e, None)\n  File \"<string>\", line 2, in raise_from\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 383, in _make_request\n    httplib_response = conn.getresponse()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 1336, in getresponse\n    response.begin()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 306, in begin\n    version, status, reason = self._read_status()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 275, in _read_status\n    raise RemoteDisconnected(\"Remote end closed connection without\"\nhttp.client.RemoteDisconnected: Remote end closed connection without response\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 449, in send\n    timeout=timeout\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 641, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\retry.py\", line 399, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='zdanie.info', port=443): Max retries exceeded with url: /search/?filter%5Btype%5D=rent&filter%5Btype_rent%5D%5B%5D=123&filter%5Btype_sale%5D%5B%5D=all&filter%5Bsquare1%5D=&filter%5Bsquare2%5D=&filter%5Bcurrency%5D=1&filter%5Bprice1%5D=&filter%5Bprice_type%5D=square_year&filter%5Bprice2%5Drice2=&filter%5Bregion%5D%5B%5D=1 (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\Actuality\\actuality_test.py\", line 81, in <module>\n    pagination = get(links[k]['pagination'], proxies=prox).text\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 510, in send\n    raise ProxyError(e, request=request)\nrequests.exceptions.ProxyError: HTTPSConnectionPool(host='zdanie.info', port=443): Max retries exceeded with url: /search/?filter%5Btype%5D=rent&filter%5Btype_rent%5D%5B%5D=123&filter%5Btype_sale%5D%5B%5D=all&filter%5Bsquare1%5D=&filter%5Bsquare2%5D=&filter%5Bcurrency%5D=1&filter%5Bprice1%5D=&filter%5Bprice_type%5D=square_year&filter%5Bprice2%5Drice2=&filter%5Bregion%5D%5B%5D=1 (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\Actuality\\actuality_test.py\", line 84, in <module>\n    prox = proxy()\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\Actuality\\actuality_test.py\", line 57, in proxy\n    return {nxt['schema']: nxt['proxy']}\nKeyError: 'schema'\n"
     }
   ],
   "business-asset.ru": [
     {
       "step": "expr",
       "query": "full-details",
-      "link": "https://business-asset.com/ru/krasnodarskij-kraj/krasnodar/prodazha-nedvizimosti/run336005/"
+      "link": "https://business-asset.com/ru/tverskaya-oblast/tver/prodazha-nedvizimosti/run830209/"
     }
   ],
   "rk-region.ru": [
     {
       "step": "expr",
       "query": "database_detail_block",
-      "link": "https://rk-region.ru/catalog/arenda/kommercheskaya-nedvizhimost/Pomeshcheniya-svobodnogo-naznacheniya/pr-kt_lomonosova_d83-7488635.html"
+      "link": "https://rk-region.ru/catalog/arenda/kommercheskaya-nedvizhimost/Pomeshcheniya-svobodnogo-naznacheniya/sh_talagskoe_d4-7603915.html"
     }
   ],
   "granta24.ru": [
@@ -443,56 +468,56 @@
     {
       "step": "expr",
       "query": "показать телефон",
-      "link": "https://www.ndv.ru/commercial/sale/1204/other"
+      "link": "https://www.ndv.ru/commercial/sale/1574/other"
     }
   ],
   "doska.ru": [
     {
       "step": "expr",
       "query": "Распечатать",
-      "link": "https://www.doska.ru/msg/real-estate/ofisi/altajskij-kraj/barnaul/illln.html"
+      "link": "https://www.doska.ru/msg/real-estate/ofisi/lipeckaja/lipeck/fompx.html"
     }
   ],
   "dom.vse42.ru": [
     {
       "step": "expr",
       "query": "omega cost-value",
-      "link": "http://dom.vse42.ru/property/27636344/?viewtype=property&category=commercial&sort=datedesc"
+      "link": "http://dom.vse42.ru/property/22350542/?viewtype=property&category=commercial&sort=datedesc"
     }
   ],
   "sibdom.ru": [
     {
       "step": "expr",
       "query": "показать телефон",
-      "link": "https://www.sibdom.ru/stickers/view/3392126/"
+      "link": "https://www.sibdom.ru/stickers/view/3379790/"
     }
   ],
   "bn.ru": [
     {
       "step": "expr",
       "query": "round_gr detail",
-      "link": "https://www.bn.ru/detail/kommercheskaya/2899980/"
+      "link": "https://www.bn.ru/detail/kommercheskaya/3304043/"
     }
   ],
   "mlsn.ru": [
     {
       "step": "expr",
       "query": "Показать контакты",
-      "link": "https://kaluga.mlsn.ru/pokupka-kommercheskaja-nedvizhimost/ofisnoe-pomeshhenie-ul-zvezdnaya-12-id197401/"
+      "link": "https://kaluga.mlsn.ru/pokupka-kommercheskaja-nedvizhimost/ploshhad-svobodnogo-naznacheniya-usacheva-1-id196995/"
     }
   ],
   "roszem.ru": [
     {
       "step": "expr",
       "query": "object-content",
-      "link": "http://www.roszem.ru/land/672154"
+      "link": "http://www.roszem.ru/land/672140"
     }
   ],
   "n1.ru": [
     {
       "step": "expr",
       "query": "offer-card-contacts__block",
-      "link": "https://moskva.n1.ru/view/29305777/?open_card_kn"
+      "link": "https://moskva.n1.ru/view/28688102/?open_card_kn"
     }
   ],
   "cian.ru": [
@@ -504,7 +529,7 @@
     {
       "step": "expr",
       "query": "Показать телефон",
-      "link": "https://www.cian.ru/sale/commercial/208982354/"
+      "link": "https://www.cian.ru/sale/commercial/209541938/"
     }
   ],
   "vrx.ru": [
@@ -518,42 +543,42 @@
     {
       "step": "expr",
       "query": "realty_detail_attrs",
-      "link": "https://www.tomsk.ru09.ru/realty?subaction=detail&id=4153000"
+      "link": "https://www.tomsk.ru09.ru/realty?subaction=detail&id=4194318"
     }
   ],
   "alterainvest.ru": [
     {
       "step": "expr",
       "query": "new_cart new-style-cart",
-      "link": "https://alterainvest.ru/commercial/real-estate-2539172/"
+      "link": "https://alterainvest.ru/commercial/real-estate-2540449/"
     }
   ],
   "qp.ru": [
     {
       "step": "expr",
       "query": "Показать телефон",
-      "link": "https://moskva.qp.ru/realty/kommercheskaja/prodau_blank_40788073"
+      "link": "https://moskva.qp.ru/realty/kommercheskaja/prodau_blank_40076973"
     }
   ],
   "agent42.ru": [
     {
       "step": "expr",
       "query": "Контактное лицо",
-      "link": "http://agent42.ru/index.php?option=com_adsmanager&page=show_ad&adid=5682&catid=23&Itemid=546"
+      "link": "http://agent42.ru/index.php?option=com_adsmanager&page=show_ad&adid=5758&catid=23&Itemid=546"
     }
   ],
   "nedvizhka.ru": [
     {
       "step": "expr",
       "query": "tag big_price",
-      "link": "https://www.nedvizhka.ru/volgograd/prodazha/prodaja/realty17045981"
+      "link": "https://www.nedvizhka.ru/volgograd/prodazha/prodaja/realty17045933"
     }
   ],
   "beboss.ru": [
     {
       "step": "expr",
       "query": "Показать телефон",
-      "link": "https://www.beboss.ru/kn/msk/2027373"
+      "link": "https://www.beboss.ru/kn/msk/2061936"
     }
   ],
   "dom43.ru": [
@@ -586,14 +611,14 @@
     {
       "step": "expr",
       "query": "card__header",
-      "link": "https://novosibirsk.n1.ru/view/30127253/?open_card_kn"
+      "link": "https://novosibirsk.n1.ru/view/30678273/?open_card_kn"
     }
   ],
   "ya39.ru": [
     {
       "step": "expr",
       "query": "ads_body_1",
-      "link": "https://ya39.ru/realty/commercial/prodat/pomeshchenie_66_kv_m_kaliningrad_leningradskiy_ganzeyskiy_per_6_s992374"
+      "link": "https://ya39.ru/realty/commercial/sdat/pomeshchenie_544_kv_m_kaliningrad_oktyabrskiy_pobedy_pr_t_171_y1538137"
     }
   ],
   "ankvartal31.ru": [
@@ -605,7 +630,7 @@
     {
       "step": "expr",
       "query": "Заказать обратный",
-      "link": "http://ankvartal31.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/%D1%85%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B3%D0%BE%D1%80%D0%B0/%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%BE-%D0%BE%D1%84%D0%B8%D1%81%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%BC-%D1%8D%D1%82%D0%B0%D0%B6%D0%B5-%D0%B2-%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D0%B6%D0%BA"
+      "link": "http://ankvartal31.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/%D1%85%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B3%D0%BE%D1%80%D0%B0/%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0-%D0%BE%D1%84%D0%B8%D1%81%D0%BE%D0%B2-%D0%B2-%D0%B6%D0%BA-%D1%81%D0%B8%D1%82%D0%B8%D0%B4%D0%BE%D0%BC-%D0%BD%D0%B0-%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0-9"
     }
   ],
   "life-realty.ru": [
@@ -617,28 +642,33 @@
     {
       "step": "expr",
       "query": "Контактная информация",
-      "link": "http://novgorod.life-realty.ru/commerce-rent/commerce_3393/"
+      "link": "http://novgorod.life-realty.ru/commerce-rent/commerce_3467/"
     }
   ],
   "vestum.ru": [
     {
       "step": "expr",
       "query": "content-offer",
-      "link": "https://www.vestum.ru/%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8/%D1%81%D0%BA%D0%BB%D0%B0%D0%B4-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D1%83%D0%BB-%D1%82%D1%80%D1%83%D0%B4%D0%B0-846813/"
+      "link": "https://www.vestum.ru/%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8/%D0%BA%D0%B0%D1%84%D0%B5-%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD-%D1%83%D0%BB-%D0%B5%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B0-848859/"
     }
   ],
   "businessesforsale.ru": [
     {
+      "step": "item",
+      "pagination": "https://businessesforsale.ru/search/default.aspx?industry=122&location=XX&pricefrom=&priceto=",
+      "path": "//a[contains(@class, \"listingResult\")]/@href"
+    },
+    {
       "step": "expr",
       "query": "apContainerLeft",
-      "link": "https://businessesforsale.ru/Respublika-Krim/kupit-biznes/administrativnoe-zdanie-uchastok-80-sotok-for-sale/"
+      "link": "https://businessesforsale.ru/Kurskaya-oblast/kupit-biznes/prodazha-neftebazi-v-kurskoj-oblasti-for-sale/"
     }
   ],
   "bbport.ru": [
     {
       "step": "expr",
       "query": "title mb_20",
-      "link": "https://russia.bbport.ruhttps://bbport.ru/commercial/arenda/torgovaja-ploshhadi/pomewenie-pod-magazin--apteku--dom-byta-v-arendu_8956/"
+      "link": "https://russia.bbport.ruhttps://novosibirsk.bbport.ru/commercial/arenda/pomeshhenie-svobodnogo-naznachenija/arenda-universalnogo-pomewenija-535-kv-m_8950/"
     }
   ]
 }
