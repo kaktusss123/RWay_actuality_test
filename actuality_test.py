@@ -11,6 +11,7 @@ serv_iter = None
 serv = None
 prox = None
 failed = {}
+clear_data = {}
 
 with open('settings.json', encoding='utf-8') as f:
     settings = load(f)
@@ -35,6 +36,7 @@ def url_concat(pagination, item_xpathed):
         return base + item_xpathed
 
 def get_proxy():
+        return
         '''Получить свежие прокси Натана'''
 
         proxy_url = 'http://10.199.13.39:8085/get_data'
@@ -92,7 +94,7 @@ for k, v in list(data.items()):
             try:
                 pagination = get(links[k]['pagination'], proxies=prox).text
             except:
-                print('    ' + proxy_err.format(prox["https"]) if prox else no_proxy_err)
+                print(settings['indent'] + proxy_err.format(prox["https"]) if prox else no_proxy_err)
                 prox = proxy()
                 continue
             else:
@@ -179,6 +181,8 @@ for k, v in list(data.items()):
     except Exception as e:
         print(exception_caught_msg.format(str(e)))
         failed.setdefault(k, []).append({'Exception': str(e), 'content': v, 'Traceback': str(traceback.format_exc())})
+    else:
+        clear_data[k] = v
 
 
 
@@ -190,6 +194,9 @@ with open('errors.json', 'w') as f:
 
 with open('data.json', 'w') as f:
     dump(data, f, ensure_ascii=False)
+
+with open('clear_data.json', 'w') as f:
+    dump(clear_data, f, ensure_ascii=False)
 
 
 

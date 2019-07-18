@@ -72,7 +72,7 @@
   "realtymag.ru": {
     "pagination": "https://www.realtymag.ru/office/prodazha/",
     "item": "https://www.realtymag.ru/office/prodazha/26686165",
-    "path": "//div[@class='offer__headline']/a/@href"
+    "path": "//a[@class='offer__details-link']/@href"
   },
   "realty.dmir.ru": {
     "pagination": "https://www.cian.ru/kupit-ofis/",
@@ -182,7 +182,7 @@
   "nmls.ru": {
     "pagination": "http://nn.nmls.ru/prodazha-kommercheskoy-nedvizhimosti",
     "item": "http://nn.nmls.ru/prodazha-kommercheskoy-nedvizhimosti/nizhniy-novgorod/id5000118-51",
-    "path": "//div[@class=\"row realty-row\"]/div[2]/div/div[2]/a/@href"
+    "path": "//div[@class='row realty-row']/div[2]/div/div[2]/a/@href"
   },
   "lg29.ru": {
     "pagination": "https://lg29.ru/estates#/table/4/",
@@ -197,7 +197,7 @@
   "realtyvision.ru": {
     "pagination": "https://www.realtyvision.ru/kommercheskaya-nedvizhimost/?id_city=1&id_action=1&id_type=7&price_min=&price_max=&s_min=&s_max=&id_ns=0&dscr=",
     "item": "https://www.realtyvision.ru/kommercheskaya-nedvizhimost/usobjects/236524/",
-    "path": "//table[@class=\"objects_table\"]//div/a[@title=\"????? ?????\"]/@href"
+    "path": "//table[@class='objects_table']//div/a[@title='Подробная информация']/@href"
   },
   "youla.ru": {
     "pagination": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost",
