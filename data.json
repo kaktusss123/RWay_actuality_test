@@ -151,7 +151,7 @@
   },
   "mirkvartir.ru": {
     "expr": [
-      "class=\"l-tgb-vertical\""
+      "\"l-tgb-vertical\""
     ],
     "exprn": [
       "За месяц"
@@ -237,7 +237,7 @@
   },
   "realty.yandex.ru": {
     "expr": [
-      "class=\"OfferShowcase__info\""
+      "\"OfferShowcase__info\""
     ],
     "exprn": [
       "Страница не найдена",
@@ -357,7 +357,7 @@
   },
   "granta24.ru": {
     "expr": [
-      "itemprop=\"description\""
+      "ОСТАВИТЬ ЗАЯВКУ"
     ],
     "exprn": ""
   },
@@ -549,6 +549,18 @@
   "bbport.ru": {
     "expr": [
       "title mb_20"
+    ],
+    "exprn": ""
+  },
+  "kvadrat22": {
+    "expr": [
+      "сделать VIP-объявлением"
+    ],
+    "exprn": ""
+  },
+  "nndv": {
+    "expr": [
+      "Размещено:"
     ],
     "exprn": ""
   }
