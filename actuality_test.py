@@ -29,27 +29,28 @@ def url_concat(pagination, item_xpathed):
     base = match(settings['regulars']['base'], pagination).group(0)
     for k, v in settings['format_templates'].items():
         if k in base:
-            return v.format(base, item_xpathed)
+            return v.format(base=base, item=item_xpathed)
     if item_xpathed.startswith(base):
-        return item_xpathed
+        return item_xpathed[:8] + item_xpathed[8:].replace('//', '/')
     else:
-        return base + item_xpathed
+        return (base + '/' + item_xpathed)[:8] + (base + '/' + item_xpathed)[
+                                                 8:].replace('//', '/')
+
 
 def get_proxy():
-        return
-        '''Получить свежие прокси Натана'''
+    """Получить свежие прокси Натана"""
 
-        proxy_url = 'http://10.199.13.39:8085/get_data'
-        proxy_lim = 50
-        proxy_offset = 86500
+    proxy_url = 'http://10.199.13.39:8085/get_data'
+    proxy_lim = 500
+    proxy_offset = 86500
 
-        json = {}
-        json['topic'] = 'proxies'
-        json['time_offset'] = proxy_offset
-        json['amount'] = proxy_lim
-        json['filter'] = ['schema', ['https']]
-        resp = post(proxy_url, json=json)
-        return resp.text
+    json = {}
+    json['topic'] = 'proxies'
+    json['time_offset'] = proxy_offset
+    json['amount'] = proxy_lim
+    json['filter'] = ['schema', ['https']]
+    resp = post(proxy_url, json=json)
+    return resp.text
 
 
 def proxy():
@@ -65,11 +66,8 @@ def proxy():
             serv = list(map(lambda x: x['value'], loads(get_proxy())))
         else:
             serv = settings['proxies']
-        shuffle(serv)
-        serv_iter = iter(serv)
-    nxt = next(serv_iter)
+    nxt = choice(serv)
     return {nxt['schema']: nxt['proxy']}
-
 
 
 with open('links1.json', encoding='utf-8') as f:
@@ -77,8 +75,9 @@ with open('links1.json', encoding='utf-8') as f:
 with open('data.json', encoding='cp1251') as f:
     data = load(f)
 
-
 for k, v in list(data.items()):
+    item = None
+    pagination = None
     try:
         """
         Check for filtered from json addresses
@@ -90,9 +89,9 @@ for k, v in list(data.items()):
 
         print(testing_msg.format(k))
 
-        for _ in range(settings['retries_count']): # 20 retries
+        for _ in range(settings['retries_count']):  # 20 retries
             try:
-                pagination = get(links[k]['pagination'], proxies=prox).text
+                pagination = get(links[k]['pagination'], proxies=prox, headers=settings['headers']).text
             except:
                 print(settings['indent'] + proxy_err.format(prox["https"]) if prox else no_proxy_err)
                 prox = proxy()
@@ -100,20 +99,18 @@ for k, v in list(data.items()):
             else:
                 break
 
-
         """
         Test for pagination expr and exprn
         """
         print(settings['indent'] + testing_pagination_msg, end='...')
 
-        for e in list(v['expr']) + list(v['exprn']):
-            if pagination.find(e) != -1:
+        for e in list(v['expr']):
+            if pagination.lower().find(e.lower()) != -1:
                 failed.setdefault(k, []).append({'step': 'pagination', 'query': e, 'link': links[k]['pagination']})
                 print(failed_msg)
                 break
         else:
             print(ok_msg)
-
 
         """
         Trying to get new item from pagination using xpath from instruction
@@ -123,26 +120,27 @@ for k, v in list(data.items()):
             new_item = choice(html.fromstring(pagination).xpath(links[k]['path']))
             links[k]['item'] = url_concat(links[k]['pagination'], new_item)
         except Exception as e:
-            failed.setdefault(k, []).append({'step': 'item', 'pagination': links[k]['pagination'], 'path': links[k]['path']})
+            failed.setdefault(k, []).append(
+                {'step': 'item', 'pagination': links[k]['pagination'], 'path': links[k]['path']})
             print(failed_msg)
             print(settings['indent'] + getting_item_msg)
         else:
             print(ok_msg)
-                
 
         """
         Trying to get an item from json if there is no item in instruction
         """
-        for _ in range(settings['retries_count']): # 20 retries
+        for _ in range(settings['retries_count']):  # 20 retries
             try:
-                item = get(url_concat(links[k]['pagination'], links[k]['item']).text, proxies=prox).text if not new_item else get(url_concat(links[k]['pagination'], new_item)).text
+                item = get(url_concat(links[k]['pagination'], links[k]['item']), proxies=prox,
+                           headers=settings['headers']).text if not new_item else get(
+                    url_concat(links[k]['pagination'], new_item), headers=settings['headers']).text
             except:
                 print(settings['indent'] + (proxy_err.format(prox['https']) if prox else no_proxy_err))
                 prox = proxy()
                 continue
             else:
                 break
-
 
         """
         If we found item neither in pagination nor in instruction
@@ -152,12 +150,11 @@ for k, v in list(data.items()):
             print(settings['indent'] + no_item_err + '...')
             continue
 
-
         """
         Item testing
         """
-        for e in v['expr']:
-            if item.find(e) == -1:
+        for e in list(v['expr']):
+            if item.lower().find(e.lower()) == -1:
                 failed.setdefault(k, []).append({'step': 'expr', 'query': e, 'link': links[k]['item']})
                 print(failed_msg)
                 # quit()
@@ -166,8 +163,8 @@ for k, v in list(data.items()):
             print(ok_msg)
 
         print(settings['indent'] + testing_item_exprn_msg, end='...')
-        for e in v['exprn']:
-            if item.find(e) != -1:
+        for e in list(v['exprn']):
+            if item.lower().find(e.lower()) != -1:
                 failed.setdefault(k, []).append({'step': 'exprn', 'query': e, 'link': links[k]['item']})
                 print(failed_msg)
                 break
@@ -184,8 +181,6 @@ for k, v in list(data.items()):
     else:
         clear_data[k] = v
 
-
-
 """
 Writing new data into files
 """
@@ -197,6 +192,3 @@ with open('data.json', 'w') as f:
 
 with open('clear_data.json', 'w') as f:
     dump(clear_data, f, ensure_ascii=False)
-
-
-

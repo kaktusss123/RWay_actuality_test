@@ -1,13 +1,15 @@
 {
-    "regulars": {
-        "base": "https?:\\/\\/.+\\.(ru|com|su|biz|pro|info)"
-    },
-    "proxies": [
-        
-    ],
-    "format_templates": {
-        
-    },
-    "retries_count": 20,
-    "indent": "    "
+  "regulars": {
+    "base": "https?:\\/\\/.+\\.(ru|com|su|biz|pro|info)"
+  },
+  "proxies": [],
+  "format_templates": {
+    "move.ru": "https:/{item}",
+    "beboss": "{item}"
+  },
+  "retries_count": 20,
+  "indent": "    ",
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+  }
 }

@@ -1,11 +1,4 @@
 {
-  "mohouse.ru": [
-    {
-      "step": "expr",
-      "query": "Кол-во просмотров",
-      "link": "http://mohouse.ru/item/15011/"
-    }
-  ],
   "raui.ru": [
     {
       "step": "item",
@@ -23,39 +16,6 @@
       "link": "https://raui.ru/realty/item/14852376-novaya-basmannaya-ulitsa"
     }
   ],
-  "tvoyadres.ru": [
-    {
-      "step": "pagination",
-      "query": "Показать телефон",
-      "link": "https://tvoyadres.ru/nedvizhimost/?region=ANY&city=&deal=ANY&object=6&period=ANY&price_min=&price_max=&contractor=ANY&status=&type=11&uid=&user=&update=&category=&without=&dacha=&private=&favorite=&archive=&similar=&bedrooms=&synonym=&submit="
-    }
-  ],
-  "avito.ru": [
-    {
-      "step": "item",
-      "pagination": "https://www.avito.ru/moskva/kommercheskaya_nedvizhimost?cd=1",
-      "path": "//a[@class=\"item-description-title-link\"]/@href"
-    },
-    {
-      "step": "expr",
-      "query": "title-info-title-text",
-      "link": "https://www.avito.ru/moskva/kommercheskaya_nedvizhimost/arenda_pomescheniya_proizvodstvo_sklad_285.3_m_1498069047"
-    }
-  ],
-  "move.ru": [
-    {
-      "step": "expr",
-      "query": "Отправить заявку",
-      "link": "https://move.ru//move.ru/objects/moskva_ulica_hamovnicheskiy_val_d_24_6815931938/"
-    }
-  ],
-  "realtymag.ru": [
-    {
-      "step": "item",
-      "pagination": "https://www.realtymag.ru/office/prodazha/",
-      "path": "//a[@class='offer__details-link']/@href"
-    }
-  ],
   "irk.ru": [
     {
       "step": "item",
@@ -64,67 +24,46 @@
     },
     {
       "step": "expr",
-      "query": "wrapping-td",
+      "query": "Связаться с продавцом",
       "link": "https://realty.irk.ru/comm/54857/"
-    }
-  ],
-  "mirkvartir.ru": [
-    {
-      "step": "expr",
-      "query": "Связаться с продавцом:",
-      "link": "https://cre.mirkvartir.ru/225120483/"
-    }
-  ],
-  "multilisting.su": [
-    {
-      "step": "pagination",
-      "query": "fa fa-search fa-l",
-      "link": "https://multilisting.su/?advertisement%5Bproperty_type%5D%5B%5D=0"
-    }
-  ],
-  "farpost.ru": [
-    {
-      "step": "expr",
-      "query": "note-form async",
-      "link": "https://www.farpost.ru/khabarovsk/realty/rent_business_realty/office/ofis-po-cene-sklada-55092441.html"
     }
   ],
   "citystar.ru": [
     {
-      "Exception": "the JSON object must be str, bytes or bytearray, not NoneType",
-      "content": {
-        "expr": [
-          "avl-middle"
-        ],
-        "exprn": ""
-      },
-      "Traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connection.py\", line 160, in _new_conn\n    (self._dns_host, self.port), self.timeout, **extra_kw)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\connection.py\", line 57, in create_connection\n    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\socket.py\", line 748, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\nsocket.gaierror: [Errno 11001] getaddrinfo failed\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 603, in urlopen\n    chunked=chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 355, in _make_request\n    conn.request(method, url, **httplib_request_kw)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 1244, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 1290, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 1239, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 1026, in _send_output\n    self.send(msg)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 966, in send\n    self.connect()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connection.py\", line 183, in connect\n    conn = self._new_conn()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connection.py\", line 169, in _new_conn\n    self, \"Failed to establish a new connection: %s\" % e)\nurllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000214C351DD88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 449, in send\n    timeout=timeout\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 641, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\retry.py\", line 399, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\nurllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='citystar.ruscard.asp', port=80): Max retries exceeded with url: /?d=40&id=9938246 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000214C351DD88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 138, in <module>\n    item = get(url_concat(links[k]['pagination'], links[k]['item']).text, proxies=prox).text if not new_item else get(url_concat(links[k]['pagination'], new_item)).text\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 516, in send\n    raise ConnectionError(e, request=request)\nrequests.exceptions.ConnectionError: HTTPConnectionPool(host='citystar.ruscard.asp', port=80): Max retries exceeded with url: /?d=40&id=9938246 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000214C351DD88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 141, in <module>\n    prox = proxy()\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 65, in proxy\n    serv = list(map(lambda x: x['value'], loads(get_proxy())))\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\json\\__init__.py\", line 341, in loads\n    raise TypeError(f'the JSON object must be str, bytes or bytearray, '\nTypeError: the JSON object must be str, bytes or bytearray, not NoneType\n"
+      "step": "expr",
+      "query": "avl-middle",
+      "link": "http://citystar.ru/scard.asp?d=40&id=9687777"
     }
   ],
   "realty.yandex.ru": [
     {
+      "step": "item",
+      "pagination": "https://realty.yandex.ru/moskva/kupit/kommercheskaya-nedvizhimost/",
+      "path": "//div[@class=\"OffersSerpItem__generalInfo\"]/a/@href"
+    },
+    {
       "step": "expr",
-      "query": "Следить за ценой",
-      "link": "https://realty.yandex.ru/offer/5335291540129157595/"
+      "query": "\"OfferShowcase__info\"",
+      "link": "https://realty.yandex.ru/offer/6200492320155053423/"
     }
   ],
   "aliant.pro": [
     {
-      "step": "pagination",
-      "query": "отправить заявку",
-      "link": "https://aliant.pro/catalog/?category=57&dealtype=0&region=0&city=0&citydistrict=0&objecttype=0&area=0&search="
-    },
-    {
       "step": "item",
       "pagination": "https://aliant.pro/catalog/?category=57&dealtype=0&region=0&city=0&citydistrict=0&objecttype=0&area=0&search=",
       "path": "//div[@class=\"itemDesc\"]/a[2]/@href"
+    },
+    {
+      "step": "expr",
+      "query": "itemDescription",
+      "link": "https://aliant.pro/catalog/commercial/g.-vologda,-ul.-batyushkova,-d.-7"
     }
   ],
   "nmls.ru": [
     {
       "step": "expr",
       "query": "card-center-col",
-      "link": "http://nn.nmls.ru#comment-modal"
+      "link": "http://nn.nmls.ru/#comment-modal"
     }
   ],
   "lg29.ru": [
@@ -135,87 +74,35 @@
     },
     {
       "step": "expr",
-      "query": "ХОЧУ ПОСМОТРЕТЬ",
+      "query": "s-rooms",
       "link": "https://lg29.ru/estates/9314"
     }
   ],
   "youla.ru": [
     {
       "step": "expr",
-      "query": "Показать номер",
-      "link": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost/arienda-ofisnoie-pomieshchieniie-295-m2-5c5d5decbd36c084b2147c2f"
-    }
-  ],
-  "domchel.ru": [
-    {
-      "step": "expr",
-      "query": "detail_realty",
-      "link": "https://chelyabinsk.n1.ru/view/30772803/?open_card_kn"
-    }
-  ],
-  "delomart.ru": [
-    {
-      "step": "item",
-      "pagination": "http://delomart.ru/",
-      "path": "//h3[@class=\"property-box-title\"]/a/@href"
-    },
-    {
-      "step": "expr",
-      "query": "property-detail",
-      "link": "http://delomart.ru/properties/%d0%b3%d0%be%d1%82%d0%be%d0%b2%d1%8b%d0%b9-%d0%b0%d1%80%d0%b5%d0%bd%d0%b4%d0%bd%d1%8b%d0%b9-%d0%b1%d0%b8%d0%b7%d0%bd%d0%b5%d1%81-%d0%b2-%d1%81%d0%be%d0%b1%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be/"
-    }
-  ],
-  "irr.ru": [
-    {
-      "step": "pagination",
-      "query": "Сменить регион",
-      "link": "https://irr.ru/real-estate/commercial-sale/offices/"
-    },
-    {
-      "step": "expr",
-      "query": "Показать телефон",
-      "link": "https://irr.ru/real-estate/commercial-sale/offices/ofis-10-kv-m-torgovo-ofisnyy-kompleks-salyama-advert709266387.html"
-    }
-  ],
-  "market.sakh.com": [
-    {
-      "step": "expr",
-      "query": "div class=\"seller\"",
-      "link": "https://market.sakh.com/2873821.html"
+      "query": "\"Product\"",
+      "link": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost/arienda-pomieshchieniie-svobodnogho-naznachieniia-160-m2-5d315f3334e190ad0264ec80"
     }
   ],
   "advecs.com": [
     {
-      "Exception": "the JSON object must be str, bytes or bytearray, not NoneType",
+      "Exception": "'NoneType' object has no attribute 'lower'",
       "content": {
         "expr": [
           "Связаться с агент"
         ],
         "exprn": "<div class=\"empty\"></div>"
       },
-      "Traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 603, in urlopen\n    chunked=chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 344, in _make_request\n    self._validate_conn(conn)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 843, in _validate_conn\n    conn.connect()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connection.py\", line 370, in connect\n    ssl_context=context)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\ssl_.py\", line 355, in ssl_wrap_socket\n    return context.wrap_socket(sock, server_hostname=server_hostname)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 423, in wrap_socket\n    session=session\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 870, in _create\n    self.do_handshake()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 1139, in do_handshake\n    self._sslobj.do_handshake()\nssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 449, in send\n    timeout=timeout\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 641, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\retry.py\", line 399, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.advecs.com', port=443): Max retries exceeded with url: /catalog/commercial/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)')))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 95, in <module>\n    pagination = get(links[k]['pagination'], proxies=prox).text\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 514, in send\n    raise SSLError(e, request=request)\nrequests.exceptions.SSLError: HTTPSConnectionPool(host='www.advecs.com', port=443): Max retries exceeded with url: /catalog/commercial/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)')))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 98, in <module>\n    prox = proxy()\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 65, in proxy\n    serv = list(map(lambda x: x['value'], loads(get_proxy())))\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\json\\__init__.py\", line 341, in loads\n    raise TypeError(f'the JSON object must be str, bytes or bytearray, '\nTypeError: the JSON object must be str, bytes or bytearray, not NoneType\n"
-    }
-  ],
-  "zdanie.info": [
-    {
-      "Exception": "the JSON object must be str, bytes or bytearray, not NoneType",
-      "content": {
-        "expr": [
-          "Контакты по объекту"
-        ],
-        "exprn": ""
-      },
-      "Traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 603, in urlopen\n    chunked=chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 387, in _make_request\n    six.raise_from(e, None)\n  File \"<string>\", line 2, in raise_from\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 383, in _make_request\n    httplib_response = conn.getresponse()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 1336, in getresponse\n    response.begin()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 306, in begin\n    version, status, reason = self._read_status()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 267, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\socket.py\", line 589, in readinto\n    return self._sock.recv_into(b)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 1071, in recv_into\n    return self.read(nbytes, buffer)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 929, in read\n    return self._sslobj.read(len, buffer)\nConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 449, in send\n    timeout=timeout\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 641, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\retry.py\", line 368, in increment\n    raise six.reraise(type(error), error, _stacktrace)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\packages\\six.py\", line 685, in reraise\n    raise value.with_traceback(tb)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 603, in urlopen\n    chunked=chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 387, in _make_request\n    six.raise_from(e, None)\n  File \"<string>\", line 2, in raise_from\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 383, in _make_request\n    httplib_response = conn.getresponse()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 1336, in getresponse\n    response.begin()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 306, in begin\n    version, status, reason = self._read_status()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py\", line 267, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\socket.py\", line 589, in readinto\n    return self._sock.recv_into(b)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 1071, in recv_into\n    return self.read(nbytes, buffer)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py\", line 929, in read\n    return self._sslobj.read(len, buffer)\nurllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 95, in <module>\n    pagination = get(links[k]['pagination'], proxies=prox).text\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 498, in send\n    raise ConnectionError(err, request=request)\nrequests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 98, in <module>\n    prox = proxy()\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 65, in proxy\n    serv = list(map(lambda x: x['value'], loads(get_proxy())))\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\json\\__init__.py\", line 341, in loads\n    raise TypeError(f'the JSON object must be str, bytes or bytearray, '\nTypeError: the JSON object must be str, bytes or bytearray, not NoneType\n"
-    }
-  ],
-  "rk-region.ru": [
-    {
-      "step": "expr",
-      "query": "database_detail_block",
-      "link": "https://rk-region.ru/catalog/arenda/kommercheskaya-nedvizhimost/Pomeshcheniya-svobodnogo-naznacheniya/ul_sovetskaya_d17-7493820.html"
+      "Traceback": "Traceback (most recent call last):\n  File \"C:/Users/v.komarnickiy/Desktop/Tasks/RWay_actuality_test/actuality_test.py\", line 109, in <module>\n    if pagination.lower().find(e.lower()) != -1:\nAttributeError: 'NoneType' object has no attribute 'lower'\n"
     }
   ],
   "granta24.ru": [
+    {
+      "step": "pagination",
+      "query": "\"description\"",
+      "link": "https://www.granta24.ru/commercial/rent.html#!square=0-8000&price=0-1500000000&view-mode=view-list"
+    },
     {
       "step": "item",
       "pagination": "https://www.granta24.ru/commercial/rent.html#!square=0-8000&price=0-1500000000&view-mode=view-list",
@@ -223,102 +110,15 @@
     },
     {
       "step": "expr",
-      "query": "catalog-card__content",
+      "query": "\"description\"",
       "link": "https://www.granta24.ru/commercial/rent/1633.html"
-    }
-  ],
-  "ndv.ru": [
-    {
-      "step": "expr",
-      "query": "показать телефон",
-      "link": "https://www.ndv.ru/commercial/sale/73/rent-business"
-    }
-  ],
-  "sibdom.ru": [
-    {
-      "step": "expr",
-      "query": "показать телефон",
-      "link": "https://www.sibdom.ru/stickers/view/3390645/"
-    }
-  ],
-  "bn.ru": [
-    {
-      "step": "expr",
-      "query": "round_gr detail",
-      "link": "https://www.bn.ru/detail/kommercheskaya/2899946/"
-    }
-  ],
-  "n1.ru": [
-    {
-      "step": "expr",
-      "query": "показать телефон",
-      "link": "https://moskva.n1.ru/view/30990567/?open_card_kn"
-    }
-  ],
-  "cian.ru": [
-    {
-      "step": "pagination",
-      "query": "Показать телефон",
-      "link": "https://www.cian.ru/kupit-ofis/"
-    }
-  ],
-  "tomsk.ru09.ru": [
-    {
-      "step": "expr",
-      "query": "realty_detail_attrs",
-      "link": "https://www.tomsk.ru09.ru/realty?subaction=raise_rules&id=4085846"
-    }
-  ],
-  "alterainvest.ru": [
-    {
-      "step": "expr",
-      "query": "new_cart new-style-cart",
-      "link": "https://alterainvest.ru/commercial/real-estate-2540449/"
-    }
-  ],
-  "kn.ngs.ru": [
-    {
-      "step": "expr",
-      "query": "card__header",
-      "link": "https://novosibirsk.n1.ru/view/30592598/?open_card_kn"
-    }
-  ],
-  "ankvartal31.ru": [
-    {
-      "step": "pagination",
-      "query": "с",
-      "link": "http://ankvartal31.ru/latest-listings?field_mt_contract_tid=All&field_mt_kind_tid=8&field_mt_property_one_value_1=All&field_rg_tid=All&field_mt_price_value=All&field_mt_property_one_value="
-    },
-    {
-      "step": "exprn",
-      "query": "с",
-      "link": "http://ankvartal31.ru/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BD%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C/%D0%BF-%D1%81%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9/%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%B8-%D0%BD%D0%B0-%D1%84%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%82%D1%80%D0%B0%D1%81%D1%81%D0%B5"
-    }
-  ],
-  "life-realty.ru": [
-    {
-      "step": "pagination",
-      "query": "Контактная информация",
-      "link": "http://novgorod.life-realty.ru/commerce-rent/oficy/"
-    }
-  ],
-  "businessesforsale.ru": [
-    {
-      "step": "expr",
-      "query": "apContainerLeft",
-      "link": "https://businessesforsale.ru/Murmanskaya-oblast/kupit-biznes/prichalnaya-liniya-so-skladskimi-pomescheniyami-for-sale/"
     }
   ],
   "bbport.ru": [
     {
-      "Exception": "the JSON object must be str, bytes or bytearray, not NoneType",
-      "content": {
-        "expr": [
-          "title mb_20"
-        ],
-        "exprn": ""
-      },
-      "Traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connection.py\", line 160, in _new_conn\n    (self._dns_host, self.port), self.timeout, **extra_kw)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\connection.py\", line 57, in create_connection\n    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\socket.py\", line 748, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):\nsocket.gaierror: [Errno 11001] getaddrinfo failed\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 603, in urlopen\n    chunked=chunked)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 344, in _make_request\n    self._validate_conn(conn)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 843, in _validate_conn\n    conn.connect()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connection.py\", line 316, in connect\n    conn = self._new_conn()\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connection.py\", line 169, in _new_conn\n    self, \"Failed to establish a new connection: %s\" % e)\nurllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x00000214C4E85108>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 449, in send\n    timeout=timeout\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\connectionpool.py\", line 641, in urlopen\n    _stacktrace=sys.exc_info()[2])\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\urllib3\\util\\retry.py\", line 399, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='russia.bbport.ruhttps', port=443): Max retries exceeded with url: //bbport.ru/commercial/arenda/avtobiznes/avtomojka-pri-vezde-v-parking-zhk-komfort-klassa_8788/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000214C4E85108>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 138, in <module>\n    item = get(url_concat(links[k]['pagination'], links[k]['item']).text, proxies=prox).text if not new_item else get(url_concat(links[k]['pagination'], new_item)).text\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 75, in get\n    return request('get', url, params=params, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\api.py\", line 60, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 533, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\sessions.py\", line 646, in send\n    r = adapter.send(request, **kwargs)\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\requests\\adapters.py\", line 516, in send\n    raise ConnectionError(e, request=request)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='russia.bbport.ruhttps', port=443): Max retries exceeded with url: //bbport.ru/commercial/arenda/avtobiznes/avtomojka-pri-vezde-v-parking-zhk-komfort-klassa_8788/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x00000214C4E85108>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 141, in <module>\n    prox = proxy()\n  File \"C:\\Users\\v.komarnickiy\\Desktop\\Tasks\\RWay_actuality_test\\actuality_test.py\", line 65, in proxy\n    serv = list(map(lambda x: x['value'], loads(get_proxy())))\n  File \"C:\\Users\\v.komarnickiy\\AppData\\Local\\Programs\\Python\\Python37\\lib\\json\\__init__.py\", line 341, in loads\n    raise TypeError(f'the JSON object must be str, bytes or bytearray, '\nTypeError: the JSON object must be str, bytes or bytearray, not NoneType\n"
+      "step": "expr",
+      "query": "title mb_20",
+      "link": "https://russia.bbport.ru/https:/bbport.ru/commercial/arenda/avtobiznes/avtomojka--detejling--shinomontazh-v-arendu_8787/"
     }
   ]
 }
