@@ -1,4 +1,3 @@
-from json import load, dump
 from test import *
 
 with open('errors.json', encoding='cp1251') as f:

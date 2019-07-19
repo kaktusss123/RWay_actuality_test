@@ -27,15 +27,6 @@
       "Запрашиваемая вами страница не найдена"
     ]
   },
-  "raui.ru": {
-    "expr": [
-      "Не забудьте сказать что нашли объявление на сайте РАУИ"
-    ],
-    "exprn": [
-      "form form-inline withoutBootstrapValidator search",
-      "страница не найдена"
-    ]
-  },
   "ayax.ru": {
     "expr": [
       "object__price"
@@ -95,14 +86,6 @@
     ],
     "exprn": ""
   },
-  "move.ru": {
-    "expr": [
-      "Отправить заявку"
-    ],
-    "exprn": [
-      "Данное объявление было снято с публикации автором или срок его подачи истек"
-    ]
-  },
   "realtymag.ru": {
     "expr": [
       "offer-detail__info-block"
@@ -111,12 +94,6 @@
       "Запрошенная Вами страница была удалена",
       "Ещё опции"
     ]
-  },
-  "irk.ru": {
-    "expr": [
-      "Дата размещения"
-    ],
-    "exprn": ""
   },
   "olymprealty.ru": {
     "expr": [
@@ -147,14 +124,6 @@
     ],
     "exprn": [
       "Данной страницы на этом сайте нет"
-    ]
-  },
-  "mirkvartir.ru": {
-    "expr": [
-      "class=\"l-tgb-vertical\""
-    ],
-    "exprn": [
-      "За месяц"
     ]
   },
   "kalugahouse.ru": {
@@ -205,12 +174,6 @@
     ],
     "exprn": ""
   },
-  "citystar.ru": {
-    "expr": [
-      "Дата обновления"
-    ],
-    "exprn": ""
-  },
   "theproperty.ru": {
     "expr": [
       "object-tabs"
@@ -235,30 +198,9 @@
       "страница не найдена"
     ]
   },
-  "realty.yandex.ru": {
-    "expr": [
-      "class=\"OfferShowcase__info\""
-    ],
-    "exprn": [
-      "Страница не найдена",
-      "Объявление устарело"
-    ]
-  },
-  "aliant.pro": {
-    "expr": [
-      "itemDescription"
-    ],
-    "exprn": ""
-  },
   "nmls.ru": {
     "expr": [
       "card-center-col"
-    ],
-    "exprn": ""
-  },
-  "lg29.ru": {
-    "expr": [
-      "s-rooms"
     ],
     "exprn": ""
   },
@@ -276,15 +218,6 @@
     ],
     "exprn": [
       "Данная страница не существует"
-    ]
-  },
-  "youla.ru": {
-    "expr": [
-      "\"Product\""
-    ],
-    "exprn": [
-      "Select-value",
-      "Продано"
     ]
   },
   "tulahouse.ru": {
@@ -329,12 +262,6 @@
     ],
     "exprn": ""
   },
-  "advecs.com": {
-    "expr": [
-      "Связаться с агент"
-    ],
-    "exprn": "<div class=\"empty\"></div>"
-  },
   "zdanie.info": {
     "expr": [
       "Контакты по объекту"
@@ -354,12 +281,6 @@
     "exprn": [
       "Элемент не найден"
     ]
-  },
-  "granta24.ru": {
-    "expr": [
-      "itemprop=\"description\""
-    ],
-    "exprn": ""
   },
   "ndv.ru": {
     "expr": [
@@ -480,14 +401,6 @@
       "объект в архиве"
     ]
   },
-  "dom43.ru": {
-    "expr": [
-      "Показать телефон"
-    ],
-    "exprn": [
-      "Возможно, объект недвижимости уже продан, или у объявления закончился срок публикации"
-    ]
-  },
   "gdeetotdom.ru": {
     "expr": [
       "price-block"
@@ -543,12 +456,6 @@
   "businessesforsale.ru": {
     "expr": [
       "Скрыть объявление"
-    ],
-    "exprn": ""
-  },
-  "bbport.ru": {
-    "expr": [
-      "title mb_20"
     ],
     "exprn": ""
   }

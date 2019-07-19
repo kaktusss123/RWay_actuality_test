@@ -61,11 +61,10 @@ def proxy():
     """
     global serv_iter
     global serv
-    if not serv_iter:
-        if not settings['proxies']:
-            serv = list(map(lambda x: x['value'], loads(get_proxy())))
-        else:
-            serv = settings['proxies']
+    if not settings['proxies']:
+        serv = list(map(lambda x: x['value'], loads(get_proxy())))
+    else:
+        serv = settings['proxies']
     nxt = choice(serv)
     return {nxt['schema']: nxt['proxy']}
 
@@ -148,6 +147,8 @@ for k, v in list(data.items()):
         print(settings['indent'] + testing_item_expr_msg, end='...')
         if not item:
             print(settings['indent'] + no_item_err + '...')
+            failed.setdefault(k, []).append({"step": "no item", "link": f"{url_concat(links[k]['pagination'], new_item)}"})
+            print(f"{url_concat(links[k]['pagination'], new_item)}")
             continue
 
         """

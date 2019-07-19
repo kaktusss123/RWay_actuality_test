@@ -16,6 +16,12 @@
       "link": "https://raui.ru/realty/item/14852376-novaya-basmannaya-ulitsa"
     }
   ],
+  "move.ru": [
+    {
+      "step": "no item",
+      "link": "https:///move.ru/objects/moskva_proezd_dejneva_d_1_6819305432/"
+    }
+  ],
   "irk.ru": [
     {
       "step": "item",
@@ -24,15 +30,27 @@
     },
     {
       "step": "expr",
-      "query": "Связаться с продавцом",
+      "query": "Дата размещения",
       "link": "https://realty.irk.ru/comm/54857/"
+    }
+  ],
+  "mirkvartir.ru": [
+    {
+      "step": "item",
+      "pagination": "https://cre.mirkvartir.ru/%d0%9c%d0%be%d1%81%d0%ba%d0%b2%d0%b0/",
+      "path": "//div[@class=\"top-content\"]/h4/a/@href"
+    },
+    {
+      "step": "expr",
+      "query": "class=\"l-tgb-vertical\"",
+      "link": "https://cre.mirkvartir.ru/218825940/"
     }
   ],
   "citystar.ru": [
     {
       "step": "expr",
-      "query": "avl-middle",
-      "link": "http://citystar.ru/scard.asp?d=40&id=9687777"
+      "query": "Дата обновления",
+      "link": "http://citystar.ru/scard.asp?d=40&id=9938246"
     }
   ],
   "realty.yandex.ru": [
@@ -43,7 +61,7 @@
     },
     {
       "step": "expr",
-      "query": "\"OfferShowcase__info\"",
+      "query": "class=\"OfferShowcase__info\"",
       "link": "https://realty.yandex.ru/offer/6200492320155053423/"
     }
   ],
@@ -57,13 +75,6 @@
       "step": "expr",
       "query": "itemDescription",
       "link": "https://aliant.pro/catalog/commercial/g.-vologda,-ul.-batyushkova,-d.-7"
-    }
-  ],
-  "nmls.ru": [
-    {
-      "step": "expr",
-      "query": "card-center-col",
-      "link": "http://nn.nmls.ru/#comment-modal"
     }
   ],
   "lg29.ru": [
@@ -81,8 +92,8 @@
   "youla.ru": [
     {
       "step": "expr",
-      "query": "\"Product\"",
-      "link": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost/arienda-pomieshchieniie-svobodnogho-naznachieniia-160-m2-5d315f3334e190ad0264ec80"
+      "query": "data-test-component=\"Product\"",
+      "link": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost/prodazha-drughaia-kommierchieskaia-niedvizhimost-100-m2-5d30e95bf2b233abef0d24a6"
     }
   ],
   "advecs.com": [
@@ -94,13 +105,13 @@
         ],
         "exprn": "<div class=\"empty\"></div>"
       },
-      "Traceback": "Traceback (most recent call last):\n  File \"C:/Users/v.komarnickiy/Desktop/Tasks/RWay_actuality_test/actuality_test.py\", line 109, in <module>\n    if pagination.lower().find(e.lower()) != -1:\nAttributeError: 'NoneType' object has no attribute 'lower'\n"
+      "Traceback": "Traceback (most recent call last):\n  File \"C:/Users/v.komarnickiy/Desktop/Tasks/RWay_actuality_test/actuality_test.py\", line 107, in <module>\n    if pagination.lower().find(e.lower()) != -1:\nAttributeError: 'NoneType' object has no attribute 'lower'\n"
     }
   ],
   "granta24.ru": [
     {
       "step": "pagination",
-      "query": "\"description\"",
+      "query": "itemprop=\"description\"",
       "link": "https://www.granta24.ru/commercial/rent.html#!square=0-8000&price=0-1500000000&view-mode=view-list"
     },
     {
@@ -110,15 +121,27 @@
     },
     {
       "step": "expr",
-      "query": "\"description\"",
+      "query": "itemprop=\"description\"",
       "link": "https://www.granta24.ru/commercial/rent/1633.html"
+    }
+  ],
+  "dom43.ru": [
+    {
+      "step": "item",
+      "pagination": "https://dom43.ru/realty/search/?realtor=&operation=sell&object_type=commercial&yandex_address=&price__gte=&price__lte=&id=&area_total__gte=&area_total__lte=",
+      "path": "//div[@class=\"property-card__price\"]/a/@href"
+    },
+    {
+      "step": "expr",
+      "query": "Показать телефон",
+      "link": "https://dom43.ru/realty/pomeschenie-svobodnogo-naznacheniya-na-prodazhu-242298/"
     }
   ],
   "bbport.ru": [
     {
       "step": "expr",
       "query": "title mb_20",
-      "link": "https://russia.bbport.ru/https:/bbport.ru/commercial/arenda/avtobiznes/avtomojka--detejling--shinomontazh-v-arendu_8787/"
+      "link": "https://russia.bbport.ru/https:/spb.bbport.ru/commercial/arenda/pomeshhenie-svobodnogo-naznachenija/otdelnoe-pomewenie-vo-dvore-na-1-jet--s-mebelju-_9028/"
     }
   ]
 }
