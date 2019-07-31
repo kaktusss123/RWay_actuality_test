@@ -1,4 +1,5 @@
 from requests import get, post
+import requests
 from json import load, dump, loads
 from re import match
 from lxml import html
@@ -12,6 +13,9 @@ serv = None
 prox = None
 failed = {}
 clear_data = {}
+
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 with open('settings.json', encoding='utf-8') as f:
     settings = load(f)
@@ -29,7 +33,7 @@ def url_concat(pagination, item_xpathed):
     base = match(settings['regulars']['base'], pagination).group(0)
     for k, v in settings['format_templates'].items():
         if k in base:
-            return v.format(base=base, item=item_xpathed)
+            return v.format(base=base, item=item_xpathed).replace('///', '//')
     if item_xpathed.startswith(base):
         return item_xpathed[:8] + item_xpathed[8:].replace('//', '/')
     else:
@@ -71,12 +75,18 @@ def proxy():
 
 with open('links1.json', encoding='utf-8') as f:
     links = load(f)
-with open('data.json', encoding='cp1251') as f:
-    data = load(f)
+with open('actuality.json', encoding='utf-8') as f:
+    data = load(f)['actuality_check']['regs']
+with open('errors.json', encoding='cp1251') as f:
+    errors = load(f)
 
 for k, v in list(data.items()):
     item = None
     pagination = None
+
+    if settings['only-errors'] and k not in errors:
+        continue
+
     try:
         """
         Check for filtered from json addresses
@@ -90,20 +100,21 @@ for k, v in list(data.items()):
 
         for _ in range(settings['retries_count']):  # 20 retries
             try:
-                pagination = get(links[k]['pagination'], proxies=prox, headers=settings['headers']).text
+                pagination = get(links[k]['pagination'], proxies=prox, headers=settings['headers'], verify=False).text
             except:
                 print(settings['indent'] + proxy_err.format(prox["https"]) if prox else no_proxy_err)
                 prox = proxy()
                 continue
             else:
+                prox = None
                 break
 
         """
-        Test for pagination expr and exprn
+        Test for pagination expr
         """
         print(settings['indent'] + testing_pagination_msg, end='...')
 
-        for e in list(v['expr']):
+        for e in [v['expr']] if v['expr'] and type(v['expr']) == str else v['expr']:
             if pagination.lower().find(e.lower()) != -1:
                 failed.setdefault(k, []).append({'step': 'pagination', 'query': e, 'link': links[k]['pagination']})
                 print(failed_msg)
@@ -131,14 +142,15 @@ for k, v in list(data.items()):
         """
         for _ in range(settings['retries_count']):  # 20 retries
             try:
-                item = get(url_concat(links[k]['pagination'], links[k]['item']), proxies=prox,
+                item = get(url_concat(links[k]['pagination'], links[k]['item'], verify=False), proxies=prox,
                            headers=settings['headers']).text if not new_item else get(
-                    url_concat(links[k]['pagination'], new_item), headers=settings['headers']).text
+                    url_concat(links[k]['pagination'], new_item), headers=settings['headers'], verify=False).text
             except:
                 print(settings['indent'] + (proxy_err.format(prox['https']) if prox else no_proxy_err))
                 prox = proxy()
                 continue
             else:
+                prox = None
                 break
 
         """
@@ -154,7 +166,7 @@ for k, v in list(data.items()):
         """
         Item testing
         """
-        for e in list(v['expr']):
+        for e in [v['expr']] if v['expr'] and type(v['expr']) == str else v['expr']:
             if item.lower().find(e.lower()) == -1:
                 failed.setdefault(k, []).append({'step': 'expr', 'query': e, 'link': links[k]['item']})
                 print(failed_msg)
@@ -164,7 +176,7 @@ for k, v in list(data.items()):
             print(ok_msg)
 
         print(settings['indent'] + testing_item_exprn_msg, end='...')
-        for e in list(v['exprn']):
+        for e in [v['exprn']] if v['exprn'] and type(v['exprn']) == str else v['exprn']:
             if item.lower().find(e.lower()) != -1:
                 failed.setdefault(k, []).append({'step': 'exprn', 'query': e, 'link': links[k]['item']})
                 print(failed_msg)

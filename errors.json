@@ -7,7 +7,7 @@
     },
     {
       "step": "expr",
-      "query": "Не забудьте сказать что нашли объявление на сайте РАУИ",
+      "query": "padding: 10px 0; background: #7edcaa; margin-top: 5px; text-align: center; color: #000;",
       "link": "https://raui.ru/realty/item/14852376-novaya-basmannaya-ulitsa"
     },
     {
@@ -16,10 +16,25 @@
       "link": "https://raui.ru/realty/item/14852376-novaya-basmannaya-ulitsa"
     }
   ],
-  "move.ru": [
+  "ndv31.ru": [
     {
-      "step": "no item",
-      "link": "https:///move.ru/objects/moskva_proezd_dejneva_d_1_6819305432/"
+      "step": "expr",
+      "query": "object--left",
+      "link": "http://ndv31.ru/object/45018"
+    }
+  ],
+  "tvoyadres.ru": [
+    {
+      "step": "pagination",
+      "query": "map small",
+      "link": "https://tvoyadres.ru/nedvizhimost/?region=ANY&city=&deal=ANY&object=6&period=ANY&price_min=&price_max=&contractor=ANY&status=&type=11&uid=&user=&update=&category=&without=&dacha=&private=&favorite=&archive=&similar=&bedrooms=&synonym=&submit="
+    }
+  ],
+  "realty.dmir.ru": [
+    {
+      "step": "expr",
+      "query": "price_offer",
+      "link": "https://www.cian.ru/sale/commercial/202619353/"
     }
   ],
   "irk.ru": [
@@ -30,39 +45,28 @@
     },
     {
       "step": "expr",
-      "query": "Дата размещения",
+      "query": "wrapping-td",
       "link": "https://realty.irk.ru/comm/54857/"
     }
   ],
   "mirkvartir.ru": [
     {
-      "step": "item",
-      "pagination": "https://cre.mirkvartir.ru/%d0%9c%d0%be%d1%81%d0%ba%d0%b2%d0%b0/",
-      "path": "//div[@class=\"top-content\"]/h4/a/@href"
-    },
-    {
       "step": "expr",
-      "query": "class=\"l-tgb-vertical\"",
-      "link": "https://cre.mirkvartir.ru/218825940/"
+      "query": "Связаться с продавцом:",
+      "link": "https://cre.mirkvartir.ru/225120482/"
     }
   ],
-  "citystar.ru": [
+  "ners.ru": [
     {
-      "step": "expr",
-      "query": "Дата обновления",
-      "link": "http://citystar.ru/scard.asp?d=40&id=9938246"
+      "step": "no item",
+      "link": "https://msk.ners.ru/https:/news.ners.ru/zakonoproekt-o-zaprete-izymat-zhile-u-dobrosovestnyh-priobretatelej-odobren-v-pervom-chtenii.html?utm_source=ru"
     }
   ],
   "realty.yandex.ru": [
     {
-      "step": "item",
-      "pagination": "https://realty.yandex.ru/moskva/kupit/kommercheskaya-nedvizhimost/",
-      "path": "//div[@class=\"OffersSerpItem__generalInfo\"]/a/@href"
-    },
-    {
       "step": "expr",
-      "query": "class=\"OfferShowcase__info\"",
-      "link": "https://realty.yandex.ru/offer/6200492320155053423/"
+      "query": "OfferPhoneButton OfferPhoneButton_wide",
+      "link": "https://realty.yandex.ru/offer/5335291540129252518/"
     }
   ],
   "aliant.pro": [
@@ -73,8 +77,15 @@
     },
     {
       "step": "expr",
-      "query": "itemDescription",
+      "query": "subTitle",
       "link": "https://aliant.pro/catalog/commercial/g.-vologda,-ul.-batyushkova,-d.-7"
+    }
+  ],
+  "nmls.ru": [
+    {
+      "step": "expr",
+      "query": "card-center-col",
+      "link": "http://nn.nmls.ru/#comment-modal"
     }
   ],
   "lg29.ru": [
@@ -85,35 +96,46 @@
     },
     {
       "step": "expr",
-      "query": "s-rooms",
+      "query": "yellow-button",
       "link": "https://lg29.ru/estates/9314"
     }
   ],
   "youla.ru": [
     {
       "step": "expr",
-      "query": "data-test-component=\"Product\"",
-      "link": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost/prodazha-drughaia-kommierchieskaia-niedvizhimost-100-m2-5d30e95bf2b233abef0d24a6"
+      "query": "Добавить в избранное",
+      "link": "https://youla.ru/moskva/nedvijimost/kommercheskaya-nedvijimost/prodazha-pomieshchieniie-svobodnogho-naznachieniia-0-m2-5d3f063a047cb136843d8e8f"
     }
   ],
-  "advecs.com": [
+  "domchel.ru": [
     {
-      "Exception": "'NoneType' object has no attribute 'lower'",
-      "content": {
-        "expr": [
-          "Связаться с агент"
-        ],
-        "exprn": "<div class=\"empty\"></div>"
-      },
-      "Traceback": "Traceback (most recent call last):\n  File \"C:/Users/v.komarnickiy/Desktop/Tasks/RWay_actuality_test/actuality_test.py\", line 107, in <module>\n    if pagination.lower().find(e.lower()) != -1:\nAttributeError: 'NoneType' object has no attribute 'lower'\n"
+      "step": "pagination",
+      "query": "contacts:show",
+      "link": "https://chelyabinsk.n1.ru/kupit/kommercheskaya/type-oficy/"
+    }
+  ],
+  "irr.ru": [
+    {
+      "step": "expr",
+      "query": "y0q7tZFoqe8lzygJJ9BOP",
+      "link": "https://irr.ru/real-estate/commercial-sale/offices/ofis-40-7-kv-m-biznes-centr-leninskaya-sloboda-ul-advert711930074.html"
+    }
+  ],
+  "market.sakh.com": [
+    {
+      "step": "expr",
+      "query": "div class=\"seller\"",
+      "link": "https://market.sakh.com/2115788.html"
+    }
+  ],
+  "rk-region.ru": [
+    {
+      "step": "pagination",
+      "query": "price-curr",
+      "link": "https://rk-region.ru/catalog/filter/tip_nedv-kommercheskaya/"
     }
   ],
   "granta24.ru": [
-    {
-      "step": "pagination",
-      "query": "itemprop=\"description\"",
-      "link": "https://www.granta24.ru/commercial/rent.html#!square=0-8000&price=0-1500000000&view-mode=view-list"
-    },
     {
       "step": "item",
       "pagination": "https://www.granta24.ru/commercial/rent.html#!square=0-8000&price=0-1500000000&view-mode=view-list",
@@ -121,8 +143,21 @@
     },
     {
       "step": "expr",
-      "query": "itemprop=\"description\"",
+      "query": "catalog-card__content",
       "link": "https://www.granta24.ru/commercial/rent/1633.html"
+    }
+  ],
+  "alterainvest.ru": [
+    {
+      "step": "expr",
+      "query": "new_cart new-style-cart",
+      "link": "https://alterainvest.ru/commercial/real-estate-2539719/"
+    }
+  ],
+  "qp.ru": [
+    {
+      "step": "no item",
+      "link": "https://moskva.qp.ru/realty/kommercheskaja/prodau_blank_39714555"
     }
   ],
   "dom43.ru": [
@@ -137,11 +172,18 @@
       "link": "https://dom43.ru/realty/pomeschenie-svobodnogo-naznacheniya-na-prodazhu-242298/"
     }
   ],
-  "bbport.ru": [
+  "kn.ngs.ru": [
     {
-      "step": "expr",
-      "query": "title mb_20",
-      "link": "https://russia.bbport.ru/https:/spb.bbport.ru/commercial/arenda/pomeshhenie-svobodnogo-naznachenija/otdelnoe-pomewenie-vo-dvore-na-1-jet--s-mebelju-_9028/"
+      "step": "pagination",
+      "query": "contacts:show",
+      "link": "https://novosibirsk.n1.ru/kupit/kommercheskaya/?utm_source=realty&utm_campaign=realty_integration&utm_term=redirected_from_realty"
+    }
+  ],
+  "businessesforsale.ru": [
+    {
+      "step": "pagination",
+      "query": "contactSellerForm",
+      "link": "https://businessesforsale.ru/search/default.aspx?industry=122&location=XX&pricefrom=&priceto="
     }
   ]
 }
